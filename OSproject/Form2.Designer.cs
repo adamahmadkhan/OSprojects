@@ -47,7 +47,7 @@ namespace OSproject
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(183, 662);
             this.panel1.TabIndex = 0;
@@ -59,7 +59,7 @@ namespace OSproject
             this.About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.About.ForeColor = System.Drawing.Color.White;
             this.About.Location = new System.Drawing.Point(9, 252);
-            this.About.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.About.Margin = new System.Windows.Forms.Padding(4);
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(157, 34);
             this.About.TabIndex = 2;
@@ -86,7 +86,7 @@ namespace OSproject
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(9, 160);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 34);
             this.button1.TabIndex = 0;
@@ -97,7 +97,7 @@ namespace OSproject
             // developers1
             // 
             this.developers1.Location = new System.Drawing.Point(191, 14);
-            this.developers1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.developers1.Margin = new System.Windows.Forms.Padding(5);
             this.developers1.Name = "developers1";
             this.developers1.Size = new System.Drawing.Size(888, 649);
             this.developers1.TabIndex = 1;
@@ -107,11 +107,12 @@ namespace OSproject
             // aboutinfo1
             // 
             this.aboutinfo1.Location = new System.Drawing.Point(191, 14);
-            this.aboutinfo1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.aboutinfo1.Margin = new System.Windows.Forms.Padding(5);
             this.aboutinfo1.Name = "aboutinfo1";
             this.aboutinfo1.Size = new System.Drawing.Size(892, 649);
             this.aboutinfo1.TabIndex = 2;
             this.aboutinfo1.Visible = false;
+            this.aboutinfo1.Load += new System.EventHandler(this.aboutinfo1_Load);
             // 
             // Dashboard
             // 
@@ -121,7 +122,7 @@ namespace OSproject
             this.Controls.Add(this.aboutinfo1);
             this.Controls.Add(this.developers1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);

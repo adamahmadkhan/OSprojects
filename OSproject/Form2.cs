@@ -56,5 +56,10 @@ namespace OSproject
         {
 
         }
+
+        private void aboutinfo1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
