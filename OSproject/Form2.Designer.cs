@@ -34,10 +34,10 @@ namespace OSproject
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.firstcome = new System.Windows.Forms.Button();
+            this.firstcomefirstserved1 = new OSproject.Firstcomefirstserved();
             this.aboutinfo2 = new OSproject.Aboutinfo();
             this.aboutinfo1 = new OSproject.Aboutinfo();
             this.developers1 = new OSproject.Developers();
-            this.firstcomefirstserved1 = new OSproject.Firstcomefirstserved();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,6 +113,14 @@ namespace OSproject
             this.firstcome.UseVisualStyleBackColor = true;
             this.firstcome.Click += new System.EventHandler(this.firstcome_Click);
             // 
+            // firstcomefirstserved1
+            // 
+            this.firstcomefirstserved1.Location = new System.Drawing.Point(241, 106);
+            this.firstcomefirstserved1.Name = "firstcomefirstserved1";
+            this.firstcomefirstserved1.Size = new System.Drawing.Size(757, 385);
+            this.firstcomefirstserved1.TabIndex = 4;
+            this.firstcomefirstserved1.Visible = false;
+            // 
             // aboutinfo2
             // 
             this.aboutinfo2.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -121,6 +129,7 @@ namespace OSproject
             this.aboutinfo2.Name = "aboutinfo2";
             this.aboutinfo2.Size = new System.Drawing.Size(871, 587);
             this.aboutinfo2.TabIndex = 3;
+            this.aboutinfo2.Visible = false;
             // 
             // aboutinfo1
             // 
@@ -142,14 +151,6 @@ namespace OSproject
             this.developers1.TabIndex = 1;
             this.developers1.Visible = false;
             this.developers1.Load += new System.EventHandler(this.developers1_Load_1);
-            // 
-            // firstcomefirstserved1
-            // 
-            this.firstcomefirstserved1.Location = new System.Drawing.Point(241, 106);
-            this.firstcomefirstserved1.Name = "firstcomefirstserved1";
-            this.firstcomefirstserved1.Size = new System.Drawing.Size(757, 385);
-            this.firstcomefirstserved1.TabIndex = 4;
-            this.firstcomefirstserved1.Visible = false;
             // 
             // Dashboard
             // 
