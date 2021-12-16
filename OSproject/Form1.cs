@@ -16,7 +16,8 @@ namespace OSproject
         {
             InitializeComponent();
         }
-
+        Dashboard obj = new Dashboard();
+        
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -30,11 +31,14 @@ namespace OSproject
         private void sub_Click(object sender, EventArgs e)
         {
             if (name.Text == "CUI" && pass.Text == "CNS")
-                MessageBox.Show("Login");
+            {
+                 
+                obj.Show();
+                
+            }
             else
                 MessageBox.Show("Invalid");
-
-        }
+            }
 
         private void label3_Click(object sender, EventArgs e)
         {

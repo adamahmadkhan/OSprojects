@@ -82,13 +82,18 @@ namespace OSproject
             // 
             // sub
             // 
+            this.sub.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.sub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sub.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.sub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.sub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sub.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sub.Location = new System.Drawing.Point(153, 191);
+            this.sub.Location = new System.Drawing.Point(153, 218);
             this.sub.Name = "sub";
             this.sub.Size = new System.Drawing.Size(133, 37);
             this.sub.TabIndex = 4;
             this.sub.Text = "Submit";
-            this.sub.UseVisualStyleBackColor = true;
+            this.sub.UseVisualStyleBackColor = false;
             this.sub.Click += new System.EventHandler(this.sub_Click);
             // 
             // panel1
