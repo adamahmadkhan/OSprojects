@@ -33,14 +33,18 @@ namespace OSproject
             this.About = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.developers1 = new OSproject.Developers();
+            this.firstcome = new System.Windows.Forms.Button();
+            this.aboutinfo2 = new OSproject.Aboutinfo();
             this.aboutinfo1 = new OSproject.Aboutinfo();
+            this.developers1 = new OSproject.Developers();
+            this.firstcomefirstserved1 = new OSproject.Firstcomefirstserved();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.firstcome);
             this.panel1.Controls.Add(this.About);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button1);
@@ -94,6 +98,41 @@ namespace OSproject
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // firstcome
+            // 
+            this.firstcome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.firstcome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.firstcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.firstcome.ForeColor = System.Drawing.Color.White;
+            this.firstcome.Location = new System.Drawing.Point(9, 314);
+            this.firstcome.Margin = new System.Windows.Forms.Padding(4);
+            this.firstcome.Name = "firstcome";
+            this.firstcome.Size = new System.Drawing.Size(157, 34);
+            this.firstcome.TabIndex = 3;
+            this.firstcome.Text = "FCFS";
+            this.firstcome.UseVisualStyleBackColor = true;
+            this.firstcome.Click += new System.EventHandler(this.firstcome_Click);
+            // 
+            // aboutinfo2
+            // 
+            this.aboutinfo2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.aboutinfo2.Location = new System.Drawing.Point(199, 22);
+            this.aboutinfo2.Margin = new System.Windows.Forms.Padding(4);
+            this.aboutinfo2.Name = "aboutinfo2";
+            this.aboutinfo2.Size = new System.Drawing.Size(871, 587);
+            this.aboutinfo2.TabIndex = 3;
+            // 
+            // aboutinfo1
+            // 
+            this.aboutinfo1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.aboutinfo1.Location = new System.Drawing.Point(191, 14);
+            this.aboutinfo1.Margin = new System.Windows.Forms.Padding(5);
+            this.aboutinfo1.Name = "aboutinfo1";
+            this.aboutinfo1.Size = new System.Drawing.Size(892, 649);
+            this.aboutinfo1.TabIndex = 2;
+            this.aboutinfo1.Visible = false;
+            this.aboutinfo1.Load += new System.EventHandler(this.aboutinfo1_Load);
+            // 
             // developers1
             // 
             this.developers1.Location = new System.Drawing.Point(191, 14);
@@ -104,21 +143,21 @@ namespace OSproject
             this.developers1.Visible = false;
             this.developers1.Load += new System.EventHandler(this.developers1_Load_1);
             // 
-            // aboutinfo1
+            // firstcomefirstserved1
             // 
-            this.aboutinfo1.Location = new System.Drawing.Point(191, 14);
-            this.aboutinfo1.Margin = new System.Windows.Forms.Padding(5);
-            this.aboutinfo1.Name = "aboutinfo1";
-            this.aboutinfo1.Size = new System.Drawing.Size(892, 649);
-            this.aboutinfo1.TabIndex = 2;
-            this.aboutinfo1.Visible = false;
-            this.aboutinfo1.Load += new System.EventHandler(this.aboutinfo1_Load);
+            this.firstcomefirstserved1.Location = new System.Drawing.Point(241, 106);
+            this.firstcomefirstserved1.Name = "firstcomefirstserved1";
+            this.firstcomefirstserved1.Size = new System.Drawing.Size(757, 385);
+            this.firstcomefirstserved1.TabIndex = 4;
+            this.firstcomefirstserved1.Visible = false;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1089, 662);
+            this.Controls.Add(this.firstcomefirstserved1);
+            this.Controls.Add(this.aboutinfo2);
             this.Controls.Add(this.aboutinfo1);
             this.Controls.Add(this.developers1);
             this.Controls.Add(this.panel1);
@@ -139,5 +178,8 @@ namespace OSproject
         private System.Windows.Forms.Button About;
         private Developers developers1;
         private Aboutinfo aboutinfo1;
+        private Aboutinfo aboutinfo2;
+        private System.Windows.Forms.Button firstcome;
+        public Firstcomefirstserved firstcomefirstserved1;
     }
 }

@@ -49,6 +49,8 @@ namespace OSproject
 
         private void button1_Click(object sender, EventArgs e)
         {
+            firstcomefirstserved1.Hide();
+            aboutinfo1.Hide();
             developers1.Show();
         }
 
@@ -60,6 +62,13 @@ namespace OSproject
         private void aboutinfo1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void firstcome_Click(object sender, EventArgs e)
+        {
+            aboutinfo1.Hide();
+            developers1.Hide();
+            firstcomefirstserved1.Show();
         }
     }
 }

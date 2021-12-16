@@ -52,6 +52,12 @@
     <Compile Include="Developers.Designer.cs">
       <DependentUpon>Developers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Firstcomefirstserved.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Firstcomefirstserved.Designer.cs">
+      <DependentUpon>Firstcomefirstserved.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="Developers.resx">
       <DependentUpon>Developers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firstcomefirstserved.resx">
+      <DependentUpon>Firstcomefirstserved.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

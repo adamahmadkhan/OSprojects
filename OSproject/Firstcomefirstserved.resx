@@ -120,11 +120,4 @@
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="label1.Text" xml:space="preserve">
-    <value>A Process Scheduler schedules different processes to be assigned to the CPU based on particular scheduling algorithms. 
-There are six popular process scheduling algorithms which we are going to discuss in this chapter
-fcps
-round robin
-</value>
-  </data>
 </root>
