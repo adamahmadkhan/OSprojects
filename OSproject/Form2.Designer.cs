@@ -30,10 +30,10 @@ namespace OSproject
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.firstcome = new System.Windows.Forms.Button();
             this.About = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.firstcome = new System.Windows.Forms.Button();
             this.firstcomefirstserved1 = new OSproject.Firstcomefirstserved();
             this.aboutinfo2 = new OSproject.Aboutinfo();
             this.aboutinfo1 = new OSproject.Aboutinfo();
@@ -55,6 +55,21 @@ namespace OSproject
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(183, 662);
             this.panel1.TabIndex = 0;
+            // 
+            // firstcome
+            // 
+            this.firstcome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.firstcome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.firstcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.firstcome.ForeColor = System.Drawing.Color.White;
+            this.firstcome.Location = new System.Drawing.Point(9, 314);
+            this.firstcome.Margin = new System.Windows.Forms.Padding(4);
+            this.firstcome.Name = "firstcome";
+            this.firstcome.Size = new System.Drawing.Size(157, 34);
+            this.firstcome.TabIndex = 3;
+            this.firstcome.Text = "FCFS";
+            this.firstcome.UseVisualStyleBackColor = true;
+            this.firstcome.Click += new System.EventHandler(this.firstcome_Click);
             // 
             // About
             // 
@@ -98,26 +113,11 @@ namespace OSproject
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // firstcome
-            // 
-            this.firstcome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.firstcome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.firstcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.firstcome.ForeColor = System.Drawing.Color.White;
-            this.firstcome.Location = new System.Drawing.Point(9, 314);
-            this.firstcome.Margin = new System.Windows.Forms.Padding(4);
-            this.firstcome.Name = "firstcome";
-            this.firstcome.Size = new System.Drawing.Size(157, 34);
-            this.firstcome.TabIndex = 3;
-            this.firstcome.Text = "FCFS";
-            this.firstcome.UseVisualStyleBackColor = true;
-            this.firstcome.Click += new System.EventHandler(this.firstcome_Click);
-            // 
             // firstcomefirstserved1
             // 
-            this.firstcomefirstserved1.Location = new System.Drawing.Point(241, 106);
+            this.firstcomefirstserved1.Location = new System.Drawing.Point(241, 70);
             this.firstcomefirstserved1.Name = "firstcomefirstserved1";
-            this.firstcomefirstserved1.Size = new System.Drawing.Size(757, 385);
+            this.firstcomefirstserved1.Size = new System.Drawing.Size(757, 453);
             this.firstcomefirstserved1.TabIndex = 4;
             this.firstcomefirstserved1.Visible = false;
             // 
