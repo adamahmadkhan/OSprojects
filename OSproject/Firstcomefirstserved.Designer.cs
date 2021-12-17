@@ -56,6 +56,10 @@ namespace OSproject
             this.burst3 = new System.Windows.Forms.TextBox();
             this.burst4 = new System.Windows.Forms.TextBox();
             this.burst0 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -254,6 +258,7 @@ namespace OSproject
             this.burst1.Size = new System.Drawing.Size(100, 22);
             this.burst1.TabIndex = 20;
             this.burst1.Visible = false;
+            this.burst1.TextChanged += new System.EventHandler(this.burst1_TextChanged);
             // 
             // burst2
             // 
@@ -288,10 +293,60 @@ namespace OSproject
             this.burst0.Visible = false;
             this.burst0.TextChanged += new System.EventHandler(this.burst0_TextChanged);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(382, 165);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(313, 17);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Process   Burst Time   Waiting TurnAround Time";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(348, 62);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 40);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "OK";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(382, 193);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 17);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "PID1";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(382, 277);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 17);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "PID1";
+            // 
             // Firstcomefirstserved
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.burst6);
             this.Controls.Add(this.burst7);
             this.Controls.Add(this.burst8);
@@ -352,5 +407,9 @@ namespace OSproject
         public System.Windows.Forms.TextBox burst3;
         public System.Windows.Forms.TextBox burst4;
         public System.Windows.Forms.TextBox burst0;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

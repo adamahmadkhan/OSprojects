@@ -15,6 +15,11 @@ namespace OSproject
         TextBox[] pid;
         int totalid;
         TextBox[] bt;
+        int[] btime;
+        int[] wtime;
+        int[] tatime;
+        int avwt;
+        int avtat;
         public Firstcomefirstserved()
         {
             InitializeComponent();
@@ -37,6 +42,7 @@ namespace OSproject
         public void reset()
         {
             pid = new TextBox[10];
+            bt = new TextBox[10];
             pid[0] = id0;
             pid[1] = id1;
             pid[2] = id2;
@@ -79,6 +85,7 @@ namespace OSproject
         {
             totalid = Convert.ToInt32(total.Text);
             label2.Show();
+            button1.Show();
             reset();
         }
 
@@ -93,6 +100,51 @@ namespace OSproject
         }
 
         private void burst0_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void mainfunction()
+        {
+            wtime = new int[10];
+            tatime = new int[10];
+            string output = " ";
+            wtime = new int[10];
+            wtime[0] = 0;
+            for (int i = 1; i < totalid; i++)
+            {
+                wtime[i] = 0;
+                for (int j = 0; j < i; j++)
+                    wtime[i] += btime[j];
+            }
+            for (int i = 0; i < totalid; i++)
+            {
+                tatime[i] = btime[i] + wtime[i];
+                avwt += wtime[i];
+                avtat += tatime[i];
+                label5.Text = "Pid" + i + "  " + btime[i] + "  " + wtime[i] + " " + tatime[i] + " \n";
+            }
+            
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+             btime = new int[10];
+             for(int i=0;i<totalid;i++)
+            {
+                btime[i] = Convert.ToInt32(bt[i].Text);
+            }
+            for (int i = 0; i < totalid; i++)
+            {
+                label6.Text =" "+btime[i];
+            }
+            mainfunction();
+        }
+
+        private void burst1_TextChanged(object sender, EventArgs e)
         {
 
         }
