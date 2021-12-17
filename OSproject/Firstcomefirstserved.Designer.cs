@@ -34,17 +34,28 @@ namespace OSproject
             this.total = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.id1 = new System.Windows.Forms.TextBox();
-            this.id5 = new System.Windows.Forms.TextBox();
+            this.id0 = new System.Windows.Forms.TextBox();
             this.id4 = new System.Windows.Forms.TextBox();
             this.id3 = new System.Windows.Forms.TextBox();
             this.id2 = new System.Windows.Forms.TextBox();
+            this.id1 = new System.Windows.Forms.TextBox();
             this.sub = new System.Windows.Forms.Button();
+            this.id6 = new System.Windows.Forms.TextBox();
             this.id7 = new System.Windows.Forms.TextBox();
             this.id8 = new System.Windows.Forms.TextBox();
             this.id9 = new System.Windows.Forms.TextBox();
-            this.id10 = new System.Windows.Forms.TextBox();
-            this.id6 = new System.Windows.Forms.TextBox();
+            this.id5 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.burst6 = new System.Windows.Forms.TextBox();
+            this.burst7 = new System.Windows.Forms.TextBox();
+            this.burst8 = new System.Windows.Forms.TextBox();
+            this.burst9 = new System.Windows.Forms.TextBox();
+            this.burst5 = new System.Windows.Forms.TextBox();
+            this.burst1 = new System.Windows.Forms.TextBox();
+            this.burst2 = new System.Windows.Forms.TextBox();
+            this.burst3 = new System.Windows.Forms.TextBox();
+            this.burst4 = new System.Windows.Forms.TextBox();
+            this.burst0 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -77,54 +88,55 @@ namespace OSproject
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 88);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(93, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.Size = new System.Drawing.Size(107, 25);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
-            this.label2.Visible = false;
+            this.label2.Text = "Process ID";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // id1
+            // id0
             // 
-            this.id1.Location = new System.Drawing.Point(95, 88);
-            this.id1.Name = "id1";
-            this.id1.Size = new System.Drawing.Size(100, 22);
-            this.id1.TabIndex = 4;
-            this.id1.Visible = false;
-            this.id1.TextChanged += new System.EventHandler(this.id1_TextChanged);
-            // 
-            // id5
-            // 
-            this.id5.Location = new System.Drawing.Point(95, 200);
-            this.id5.Name = "id5";
-            this.id5.Size = new System.Drawing.Size(100, 22);
-            this.id5.TabIndex = 5;
-            this.id5.Visible = false;
+            this.id0.Location = new System.Drawing.Point(98, 76);
+            this.id0.Name = "id0";
+            this.id0.Size = new System.Drawing.Size(100, 22);
+            this.id0.TabIndex = 4;
+            this.id0.Visible = false;
+            this.id0.TextChanged += new System.EventHandler(this.id1_TextChanged);
             // 
             // id4
             // 
-            this.id4.Location = new System.Drawing.Point(95, 172);
+            this.id4.Location = new System.Drawing.Point(98, 188);
             this.id4.Name = "id4";
             this.id4.Size = new System.Drawing.Size(100, 22);
-            this.id4.TabIndex = 6;
+            this.id4.TabIndex = 5;
             this.id4.Visible = false;
             // 
             // id3
             // 
-            this.id3.Location = new System.Drawing.Point(95, 144);
+            this.id3.Location = new System.Drawing.Point(98, 160);
             this.id3.Name = "id3";
             this.id3.Size = new System.Drawing.Size(100, 22);
-            this.id3.TabIndex = 7;
+            this.id3.TabIndex = 6;
             this.id3.Visible = false;
             // 
             // id2
             // 
-            this.id2.Location = new System.Drawing.Point(95, 116);
+            this.id2.Location = new System.Drawing.Point(98, 132);
             this.id2.Name = "id2";
             this.id2.Size = new System.Drawing.Size(100, 22);
-            this.id2.TabIndex = 8;
+            this.id2.TabIndex = 7;
             this.id2.Visible = false;
+            // 
+            // id1
+            // 
+            this.id1.Location = new System.Drawing.Point(98, 104);
+            this.id1.Name = "id1";
+            this.id1.Size = new System.Drawing.Size(100, 22);
+            this.id1.TabIndex = 8;
+            this.id1.Visible = false;
             // 
             // sub
             // 
@@ -143,66 +155,170 @@ namespace OSproject
             this.sub.UseVisualStyleBackColor = false;
             this.sub.Click += new System.EventHandler(this.sub_Click);
             // 
+            // id6
+            // 
+            this.id6.Location = new System.Drawing.Point(98, 244);
+            this.id6.Name = "id6";
+            this.id6.Size = new System.Drawing.Size(100, 22);
+            this.id6.TabIndex = 14;
+            this.id6.Visible = false;
+            // 
             // id7
             // 
-            this.id7.Location = new System.Drawing.Point(95, 256);
+            this.id7.Location = new System.Drawing.Point(98, 272);
             this.id7.Name = "id7";
             this.id7.Size = new System.Drawing.Size(100, 22);
-            this.id7.TabIndex = 14;
+            this.id7.TabIndex = 13;
             this.id7.Visible = false;
             // 
             // id8
             // 
-            this.id8.Location = new System.Drawing.Point(95, 284);
+            this.id8.Location = new System.Drawing.Point(98, 300);
             this.id8.Name = "id8";
             this.id8.Size = new System.Drawing.Size(100, 22);
-            this.id8.TabIndex = 13;
+            this.id8.TabIndex = 12;
             this.id8.Visible = false;
             // 
             // id9
             // 
-            this.id9.Location = new System.Drawing.Point(95, 312);
+            this.id9.Location = new System.Drawing.Point(98, 332);
             this.id9.Name = "id9";
             this.id9.Size = new System.Drawing.Size(100, 22);
-            this.id9.TabIndex = 12;
+            this.id9.TabIndex = 11;
             this.id9.Visible = false;
             // 
-            // id10
+            // id5
             // 
-            this.id10.Location = new System.Drawing.Point(95, 340);
-            this.id10.Name = "id10";
-            this.id10.Size = new System.Drawing.Size(100, 22);
-            this.id10.TabIndex = 11;
-            this.id10.Visible = false;
+            this.id5.Location = new System.Drawing.Point(98, 216);
+            this.id5.Name = "id5";
+            this.id5.Size = new System.Drawing.Size(100, 22);
+            this.id5.TabIndex = 10;
+            this.id5.Visible = false;
             // 
-            // id6
+            // label3
             // 
-            this.id6.Location = new System.Drawing.Point(95, 228);
-            this.id6.Name = "id6";
-            this.id6.Size = new System.Drawing.Size(100, 22);
-            this.id6.TabIndex = 10;
-            this.id6.Visible = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(223, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 25);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "burst time";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // burst6
+            // 
+            this.burst6.Location = new System.Drawing.Point(228, 244);
+            this.burst6.Name = "burst6";
+            this.burst6.Size = new System.Drawing.Size(100, 22);
+            this.burst6.TabIndex = 25;
+            this.burst6.Visible = false;
+            // 
+            // burst7
+            // 
+            this.burst7.Location = new System.Drawing.Point(228, 272);
+            this.burst7.Name = "burst7";
+            this.burst7.Size = new System.Drawing.Size(100, 22);
+            this.burst7.TabIndex = 24;
+            this.burst7.Visible = false;
+            // 
+            // burst8
+            // 
+            this.burst8.Location = new System.Drawing.Point(228, 300);
+            this.burst8.Name = "burst8";
+            this.burst8.Size = new System.Drawing.Size(100, 22);
+            this.burst8.TabIndex = 23;
+            this.burst8.Visible = false;
+            // 
+            // burst9
+            // 
+            this.burst9.Location = new System.Drawing.Point(228, 332);
+            this.burst9.Name = "burst9";
+            this.burst9.Size = new System.Drawing.Size(100, 22);
+            this.burst9.TabIndex = 22;
+            this.burst9.Visible = false;
+            // 
+            // burst5
+            // 
+            this.burst5.Location = new System.Drawing.Point(228, 216);
+            this.burst5.Name = "burst5";
+            this.burst5.Size = new System.Drawing.Size(100, 22);
+            this.burst5.TabIndex = 21;
+            this.burst5.Visible = false;
+            // 
+            // burst1
+            // 
+            this.burst1.Location = new System.Drawing.Point(228, 104);
+            this.burst1.Name = "burst1";
+            this.burst1.Size = new System.Drawing.Size(100, 22);
+            this.burst1.TabIndex = 20;
+            this.burst1.Visible = false;
+            // 
+            // burst2
+            // 
+            this.burst2.Location = new System.Drawing.Point(228, 132);
+            this.burst2.Name = "burst2";
+            this.burst2.Size = new System.Drawing.Size(100, 22);
+            this.burst2.TabIndex = 19;
+            this.burst2.Visible = false;
+            // 
+            // burst3
+            // 
+            this.burst3.Location = new System.Drawing.Point(228, 160);
+            this.burst3.Name = "burst3";
+            this.burst3.Size = new System.Drawing.Size(100, 22);
+            this.burst3.TabIndex = 18;
+            this.burst3.Visible = false;
+            // 
+            // burst4
+            // 
+            this.burst4.Location = new System.Drawing.Point(228, 188);
+            this.burst4.Name = "burst4";
+            this.burst4.Size = new System.Drawing.Size(100, 22);
+            this.burst4.TabIndex = 17;
+            this.burst4.Visible = false;
+            // 
+            // burst0
+            // 
+            this.burst0.Location = new System.Drawing.Point(228, 76);
+            this.burst0.Name = "burst0";
+            this.burst0.Size = new System.Drawing.Size(100, 22);
+            this.burst0.TabIndex = 16;
+            this.burst0.Visible = false;
+            this.burst0.TextChanged += new System.EventHandler(this.burst0_TextChanged);
             // 
             // Firstcomefirstserved
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.burst6);
+            this.Controls.Add(this.burst7);
+            this.Controls.Add(this.burst8);
+            this.Controls.Add(this.burst9);
+            this.Controls.Add(this.burst5);
+            this.Controls.Add(this.burst1);
+            this.Controls.Add(this.burst2);
+            this.Controls.Add(this.burst3);
+            this.Controls.Add(this.burst4);
+            this.Controls.Add(this.burst0);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.id6);
             this.Controls.Add(this.id7);
             this.Controls.Add(this.id8);
             this.Controls.Add(this.id9);
-            this.Controls.Add(this.id10);
-            this.Controls.Add(this.id6);
+            this.Controls.Add(this.id5);
             this.Controls.Add(this.sub);
+            this.Controls.Add(this.id1);
             this.Controls.Add(this.id2);
             this.Controls.Add(this.id3);
             this.Controls.Add(this.id4);
-            this.Controls.Add(this.id5);
-            this.Controls.Add(this.id1);
+            this.Controls.Add(this.id0);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.total);
             this.Controls.Add(this.label1);
             this.Name = "Firstcomefirstserved";
-            this.Size = new System.Drawing.Size(757, 385);
+            this.Size = new System.Drawing.Size(757, 411);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,16 +330,27 @@ namespace OSproject
         public System.Windows.Forms.TextBox total;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.TextBox id1;
-        public System.Windows.Forms.TextBox id5;
+        public System.Windows.Forms.TextBox id0;
         public System.Windows.Forms.TextBox id4;
         public System.Windows.Forms.TextBox id3;
         public System.Windows.Forms.TextBox id2;
+        public System.Windows.Forms.TextBox id1;
         private System.Windows.Forms.Button sub;
+        public System.Windows.Forms.TextBox id6;
         public System.Windows.Forms.TextBox id7;
         public System.Windows.Forms.TextBox id8;
         public System.Windows.Forms.TextBox id9;
-        public System.Windows.Forms.TextBox id10;
-        public System.Windows.Forms.TextBox id6;
+        public System.Windows.Forms.TextBox id5;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox burst6;
+        public System.Windows.Forms.TextBox burst7;
+        public System.Windows.Forms.TextBox burst8;
+        public System.Windows.Forms.TextBox burst9;
+        public System.Windows.Forms.TextBox burst5;
+        public System.Windows.Forms.TextBox burst1;
+        public System.Windows.Forms.TextBox burst2;
+        public System.Windows.Forms.TextBox burst3;
+        public System.Windows.Forms.TextBox burst4;
+        public System.Windows.Forms.TextBox burst0;
     }
 }

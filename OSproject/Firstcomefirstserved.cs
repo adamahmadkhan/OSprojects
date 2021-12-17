@@ -12,6 +12,9 @@ namespace OSproject
 {
     public partial class Firstcomefirstserved : UserControl
     {
+        TextBox[] pid;
+        int totalid;
+        TextBox[] bt;
         public Firstcomefirstserved()
         {
             InitializeComponent();
@@ -31,10 +34,10 @@ namespace OSproject
         {
 
         }
-        public void working(int total)
+        public void reset()
         {
-            TextBox[] pid = new TextBox[10];
-            pid[0] = id10;
+            pid = new TextBox[10];
+            pid[0] = id0;
             pid[1] = id1;
             pid[2] = id2;
             pid[3] = id3;
@@ -44,11 +47,26 @@ namespace OSproject
             pid[7] = id7;
             pid[8] = id8;
             pid[9] = id9;
-            
-            for(int i=1;i<total;i++)
+            bt[0] = burst0;
+            bt[1] = burst1;
+            bt[2] = burst2;
+            bt[3] = burst3;
+            bt[4] = burst4;
+            bt[5] = burst5;
+            bt[6] = burst6;
+            bt[7] = burst7;
+            bt[8] = burst8;
+            bt[9] = burst9;
+            for (int i = 0; i < 9; i++)
             {
-                label1.Text = label1.Text+ "Sr " + i + "\n";
+                pid[i].Hide();
+                bt[i].Hide();
+            }
+              
+            for(int i=0;i<totalid;i++)
+            {
                 pid[i].Show();
+                bt[i].Show();
             }
         }
         private void total_TextChanged(object sender, EventArgs e)
@@ -59,11 +77,22 @@ namespace OSproject
 
         private void sub_Click(object sender, EventArgs e)
         {
-            int totalid = Int32.Parse(total.Text);
-            working(totalid);
+            totalid = Convert.ToInt32(total.Text);
+            label2.Show();
+            reset();
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void burst0_TextChanged(object sender, EventArgs e)
         {
 
         }
