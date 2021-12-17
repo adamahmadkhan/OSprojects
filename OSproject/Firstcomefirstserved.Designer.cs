@@ -296,11 +296,12 @@ namespace OSproject
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(382, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(313, 17);
+            this.label4.Size = new System.Drawing.Size(214, 17);
             this.label4.TabIndex = 26;
-            this.label4.Text = "Process   Burst Time   Waiting TurnAround Time";
+            this.label4.Text = "Process Burst Waiting TurnAround";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button1
@@ -324,20 +325,23 @@ namespace OSproject
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(382, 193);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 17);
+            this.label5.Size = new System.Drawing.Size(0, 19);
             this.label5.TabIndex = 28;
-            this.label5.Text = "PID1";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(382, 277);
+            this.label6.Location = new System.Drawing.Point(386, 336);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 17);
+            this.label6.Size = new System.Drawing.Size(46, 17);
             this.label6.TabIndex = 29;
-            this.label6.Text = "PID1";
+            this.label6.Text = "label6";
+            this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Firstcomefirstserved
             // 
@@ -374,6 +378,7 @@ namespace OSproject
             this.Controls.Add(this.label1);
             this.Name = "Firstcomefirstserved";
             this.Size = new System.Drawing.Size(757, 411);
+            this.Load += new System.EventHandler(this.Firstcomefirstserved_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -125,10 +125,15 @@ namespace OSproject
             {
                 tatime[i] = btime[i] + wtime[i];
                 avwt += wtime[i];
-                avtat += tatime[i];
-                label5.Text = "Pid" + i + "  " + btime[i] + "  " + wtime[i] + " " + tatime[i] + " \n";
+                avtat += tatime[i];       //Process Burst Time Waiting TurnAround Time
+                label5.Text = label5.Text+"pid "+pid[i].Text + i + "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
             }
-            
+            avwt /= totalid;
+            avtat /= totalid;
+            label6.Show();
+            label6.Text = "average waiting time: " + avwt + "\nAverage turn around time " + avtat;
+
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -137,14 +142,26 @@ namespace OSproject
             {
                 btime[i] = Convert.ToInt32(bt[i].Text);
             }
-            for (int i = 0; i < totalid; i++)
-            {
-                label6.Text =" "+btime[i];
-            }
+            label5.Text = "";
             mainfunction();
         }
 
         private void burst1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Firstcomefirstserved_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

@@ -37,7 +37,7 @@ namespace OSproject
 
         private void About_Click(object sender, EventArgs e)
         {
-            
+            firstcomefirstserved1.Hide();
             developers1.Hide();
             aboutinfo1.Show();
         }
