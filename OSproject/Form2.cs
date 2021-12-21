@@ -70,5 +70,10 @@ namespace OSproject
             developers1.Hide();
             firstcomefirstserved1.Show();
         }
+
+        private void shortest_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

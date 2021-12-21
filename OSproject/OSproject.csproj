@@ -52,11 +52,11 @@
     <Compile Include="Developers.Designer.cs">
       <DependentUpon>Developers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Firstcomefirstserved.cs">
+    <Compile Include="cpualgothirms.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Firstcomefirstserved.Designer.cs">
-      <DependentUpon>Firstcomefirstserved.cs</DependentUpon>
+    <Compile Include="cpualgothirms.Designer.cs">
+      <DependentUpon>cpualgothirms.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -81,8 +81,8 @@
     <EmbeddedResource Include="Developers.resx">
       <DependentUpon>Developers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Firstcomefirstserved.resx">
-      <DependentUpon>Firstcomefirstserved.cs</DependentUpon>
+    <EmbeddedResource Include="cpualgothirms.resx">
+      <DependentUpon>cpualgothirms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

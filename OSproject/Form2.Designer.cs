@@ -34,16 +34,18 @@ namespace OSproject
             this.About = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.firstcomefirstserved1 = new OSproject.Firstcomefirstserved();
+            this.firstcomefirstserved1 = new OSproject.cpualgothirms();
             this.aboutinfo2 = new OSproject.Aboutinfo();
             this.aboutinfo1 = new OSproject.Aboutinfo();
             this.developers1 = new OSproject.Developers();
+            this.shortest = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.shortest);
             this.panel1.Controls.Add(this.firstcome);
             this.panel1.Controls.Add(this.About);
             this.panel1.Controls.Add(this.label1);
@@ -62,7 +64,7 @@ namespace OSproject
             this.firstcome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.firstcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.firstcome.ForeColor = System.Drawing.Color.White;
-            this.firstcome.Location = new System.Drawing.Point(9, 314);
+            this.firstcome.Location = new System.Drawing.Point(9, 244);
             this.firstcome.Margin = new System.Windows.Forms.Padding(4);
             this.firstcome.Name = "firstcome";
             this.firstcome.Size = new System.Drawing.Size(157, 34);
@@ -77,7 +79,7 @@ namespace OSproject
             this.About.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.About.ForeColor = System.Drawing.Color.White;
-            this.About.Location = new System.Drawing.Point(9, 252);
+            this.About.Location = new System.Drawing.Point(9, 202);
             this.About.Margin = new System.Windows.Forms.Padding(4);
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(157, 34);
@@ -115,9 +117,9 @@ namespace OSproject
             // 
             // firstcomefirstserved1
             // 
-            this.firstcomefirstserved1.Location = new System.Drawing.Point(241, 70);
+            this.firstcomefirstserved1.Location = new System.Drawing.Point(199, 22);
             this.firstcomefirstserved1.Name = "firstcomefirstserved1";
-            this.firstcomefirstserved1.Size = new System.Drawing.Size(757, 453);
+            this.firstcomefirstserved1.Size = new System.Drawing.Size(878, 522);
             this.firstcomefirstserved1.TabIndex = 4;
             this.firstcomefirstserved1.Visible = false;
             // 
@@ -152,6 +154,21 @@ namespace OSproject
             this.developers1.Visible = false;
             this.developers1.Load += new System.EventHandler(this.developers1_Load_1);
             // 
+            // shortest
+            // 
+            this.shortest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.shortest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.shortest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.shortest.ForeColor = System.Drawing.Color.White;
+            this.shortest.Location = new System.Drawing.Point(9, 286);
+            this.shortest.Margin = new System.Windows.Forms.Padding(4);
+            this.shortest.Name = "shortest";
+            this.shortest.Size = new System.Drawing.Size(157, 34);
+            this.shortest.TabIndex = 4;
+            this.shortest.Text = "SJF";
+            this.shortest.UseVisualStyleBackColor = true;
+            this.shortest.Click += new System.EventHandler(this.shortest_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -181,6 +198,7 @@ namespace OSproject
         private Aboutinfo aboutinfo1;
         private Aboutinfo aboutinfo2;
         private System.Windows.Forms.Button firstcome;
-        public Firstcomefirstserved firstcomefirstserved1;
+        public cpualgothirms firstcomefirstserved1;
+        private System.Windows.Forms.Button shortest;
     }
 }

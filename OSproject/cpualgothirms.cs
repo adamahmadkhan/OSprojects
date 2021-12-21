@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace OSproject
 {
-    public partial class Firstcomefirstserved : UserControl
+    public partial class cpualgothirms : UserControl
     {
         TextBox[] pid;
         int totalid;
@@ -20,7 +20,7 @@ namespace OSproject
         int[] tatime;
         int avwt;
         int avtat;
-        public Firstcomefirstserved()
+        public cpualgothirms()
         {
             InitializeComponent();
         }
@@ -63,7 +63,7 @@ namespace OSproject
             bt[7] = burst7;
             bt[8] = burst8;
             bt[9] = burst9;
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 10; i++)
             {
                 pid[i].Hide();
                 bt[i].Hide();
@@ -108,11 +108,10 @@ namespace OSproject
         {
 
         }
-        public void mainfunction()
+        public void firstcomfirstser()
         {
             wtime = new int[10];
             tatime = new int[10];
-            string output = " ";
             wtime = new int[10];
             wtime[0] = 0;
             for (int i = 1; i < totalid; i++)
@@ -126,7 +125,7 @@ namespace OSproject
                 tatime[i] = btime[i] + wtime[i];
                 avwt += wtime[i];
                 avtat += tatime[i];       //Process Burst Time Waiting TurnAround Time
-                label5.Text = label5.Text+"pid "+pid[i].Text + i + "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
+                label5.Text = label5.Text+"pid "+pid[i].Text+ "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
             }
             avwt /= totalid;
             avtat /= totalid;
@@ -143,7 +142,7 @@ namespace OSproject
                 btime[i] = Convert.ToInt32(bt[i].Text);
             }
             label5.Text = "";
-            mainfunction();
+            firstcomfirstser();
         }
 
         private void burst1_TextChanged(object sender, EventArgs e)
