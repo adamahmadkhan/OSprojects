@@ -93,7 +93,7 @@ namespace OSproject
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(93, 39);
+            this.label2.Location = new System.Drawing.Point(12, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 25);
             this.label2.TabIndex = 3;
@@ -103,7 +103,7 @@ namespace OSproject
             // 
             // id0
             // 
-            this.id0.Location = new System.Drawing.Point(98, 76);
+            this.id0.Location = new System.Drawing.Point(17, 79);
             this.id0.Name = "id0";
             this.id0.Size = new System.Drawing.Size(100, 22);
             this.id0.TabIndex = 4;
@@ -112,7 +112,7 @@ namespace OSproject
             // 
             // id4
             // 
-            this.id4.Location = new System.Drawing.Point(98, 188);
+            this.id4.Location = new System.Drawing.Point(17, 191);
             this.id4.Name = "id4";
             this.id4.Size = new System.Drawing.Size(100, 22);
             this.id4.TabIndex = 5;
@@ -120,7 +120,7 @@ namespace OSproject
             // 
             // id3
             // 
-            this.id3.Location = new System.Drawing.Point(98, 160);
+            this.id3.Location = new System.Drawing.Point(17, 163);
             this.id3.Name = "id3";
             this.id3.Size = new System.Drawing.Size(100, 22);
             this.id3.TabIndex = 6;
@@ -128,7 +128,7 @@ namespace OSproject
             // 
             // id2
             // 
-            this.id2.Location = new System.Drawing.Point(98, 132);
+            this.id2.Location = new System.Drawing.Point(17, 135);
             this.id2.Name = "id2";
             this.id2.Size = new System.Drawing.Size(100, 22);
             this.id2.TabIndex = 7;
@@ -136,7 +136,7 @@ namespace OSproject
             // 
             // id1
             // 
-            this.id1.Location = new System.Drawing.Point(98, 104);
+            this.id1.Location = new System.Drawing.Point(17, 107);
             this.id1.Name = "id1";
             this.id1.Size = new System.Drawing.Size(100, 22);
             this.id1.TabIndex = 8;
@@ -161,7 +161,7 @@ namespace OSproject
             // 
             // id6
             // 
-            this.id6.Location = new System.Drawing.Point(98, 244);
+            this.id6.Location = new System.Drawing.Point(17, 247);
             this.id6.Name = "id6";
             this.id6.Size = new System.Drawing.Size(100, 22);
             this.id6.TabIndex = 14;
@@ -169,7 +169,7 @@ namespace OSproject
             // 
             // id7
             // 
-            this.id7.Location = new System.Drawing.Point(98, 272);
+            this.id7.Location = new System.Drawing.Point(17, 275);
             this.id7.Name = "id7";
             this.id7.Size = new System.Drawing.Size(100, 22);
             this.id7.TabIndex = 13;
@@ -177,7 +177,7 @@ namespace OSproject
             // 
             // id8
             // 
-            this.id8.Location = new System.Drawing.Point(98, 300);
+            this.id8.Location = new System.Drawing.Point(17, 303);
             this.id8.Name = "id8";
             this.id8.Size = new System.Drawing.Size(100, 22);
             this.id8.TabIndex = 12;
@@ -185,7 +185,7 @@ namespace OSproject
             // 
             // id9
             // 
-            this.id9.Location = new System.Drawing.Point(98, 332);
+            this.id9.Location = new System.Drawing.Point(17, 335);
             this.id9.Name = "id9";
             this.id9.Size = new System.Drawing.Size(100, 22);
             this.id9.TabIndex = 11;
@@ -193,7 +193,7 @@ namespace OSproject
             // 
             // id5
             // 
-            this.id5.Location = new System.Drawing.Point(98, 216);
+            this.id5.Location = new System.Drawing.Point(17, 219);
             this.id5.Name = "id5";
             this.id5.Size = new System.Drawing.Size(100, 22);
             this.id5.TabIndex = 10;
@@ -203,7 +203,7 @@ namespace OSproject
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(223, 39);
+            this.label3.Location = new System.Drawing.Point(151, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 25);
             this.label3.TabIndex = 15;
@@ -213,7 +213,7 @@ namespace OSproject
             // 
             // burst6
             // 
-            this.burst6.Location = new System.Drawing.Point(228, 244);
+            this.burst6.Location = new System.Drawing.Point(147, 247);
             this.burst6.Name = "burst6";
             this.burst6.Size = new System.Drawing.Size(100, 22);
             this.burst6.TabIndex = 25;
@@ -221,7 +221,7 @@ namespace OSproject
             // 
             // burst7
             // 
-            this.burst7.Location = new System.Drawing.Point(228, 272);
+            this.burst7.Location = new System.Drawing.Point(147, 275);
             this.burst7.Name = "burst7";
             this.burst7.Size = new System.Drawing.Size(100, 22);
             this.burst7.TabIndex = 24;
@@ -229,7 +229,7 @@ namespace OSproject
             // 
             // burst8
             // 
-            this.burst8.Location = new System.Drawing.Point(228, 300);
+            this.burst8.Location = new System.Drawing.Point(147, 303);
             this.burst8.Name = "burst8";
             this.burst8.Size = new System.Drawing.Size(100, 22);
             this.burst8.TabIndex = 23;
@@ -237,7 +237,7 @@ namespace OSproject
             // 
             // burst9
             // 
-            this.burst9.Location = new System.Drawing.Point(228, 332);
+            this.burst9.Location = new System.Drawing.Point(147, 335);
             this.burst9.Name = "burst9";
             this.burst9.Size = new System.Drawing.Size(100, 22);
             this.burst9.TabIndex = 22;
@@ -245,7 +245,7 @@ namespace OSproject
             // 
             // burst5
             // 
-            this.burst5.Location = new System.Drawing.Point(228, 216);
+            this.burst5.Location = new System.Drawing.Point(147, 219);
             this.burst5.Name = "burst5";
             this.burst5.Size = new System.Drawing.Size(100, 22);
             this.burst5.TabIndex = 21;
@@ -253,7 +253,7 @@ namespace OSproject
             // 
             // burst1
             // 
-            this.burst1.Location = new System.Drawing.Point(228, 104);
+            this.burst1.Location = new System.Drawing.Point(147, 107);
             this.burst1.Name = "burst1";
             this.burst1.Size = new System.Drawing.Size(100, 22);
             this.burst1.TabIndex = 20;
@@ -262,7 +262,7 @@ namespace OSproject
             // 
             // burst2
             // 
-            this.burst2.Location = new System.Drawing.Point(228, 132);
+            this.burst2.Location = new System.Drawing.Point(147, 135);
             this.burst2.Name = "burst2";
             this.burst2.Size = new System.Drawing.Size(100, 22);
             this.burst2.TabIndex = 19;
@@ -270,7 +270,7 @@ namespace OSproject
             // 
             // burst3
             // 
-            this.burst3.Location = new System.Drawing.Point(228, 160);
+            this.burst3.Location = new System.Drawing.Point(147, 163);
             this.burst3.Name = "burst3";
             this.burst3.Size = new System.Drawing.Size(100, 22);
             this.burst3.TabIndex = 18;
@@ -278,7 +278,7 @@ namespace OSproject
             // 
             // burst4
             // 
-            this.burst4.Location = new System.Drawing.Point(228, 188);
+            this.burst4.Location = new System.Drawing.Point(147, 191);
             this.burst4.Name = "burst4";
             this.burst4.Size = new System.Drawing.Size(100, 22);
             this.burst4.TabIndex = 17;
@@ -286,7 +286,7 @@ namespace OSproject
             // 
             // burst0
             // 
-            this.burst0.Location = new System.Drawing.Point(228, 76);
+            this.burst0.Location = new System.Drawing.Point(147, 79);
             this.burst0.Name = "burst0";
             this.burst0.Size = new System.Drawing.Size(100, 22);
             this.burst0.TabIndex = 16;
@@ -297,7 +297,7 @@ namespace OSproject
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(464, 85);
+            this.label4.Location = new System.Drawing.Point(505, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(214, 17);
             this.label4.TabIndex = 26;
@@ -312,7 +312,7 @@ namespace OSproject
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(348, 62);
+            this.button1.Location = new System.Drawing.Point(399, 66);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 40);
@@ -326,7 +326,7 @@ namespace OSproject
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(464, 107);
+            this.label5.Location = new System.Drawing.Point(504, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 19);
             this.label5.TabIndex = 28;
@@ -336,7 +336,7 @@ namespace OSproject
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(464, 305);
+            this.label6.Location = new System.Drawing.Point(480, 308);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 17);
             this.label6.TabIndex = 29;
@@ -344,7 +344,7 @@ namespace OSproject
             this.label6.Visible = false;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // Firstcomefirstserved
+            // cpualgothirms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -377,7 +377,7 @@ namespace OSproject
             this.Controls.Add(this.label2);
             this.Controls.Add(this.total);
             this.Controls.Add(this.label1);
-            this.Name = "Firstcomefirstserved";
+            this.Name = "cpualgothirms";
             this.Size = new System.Drawing.Size(757, 464);
             this.Load += new System.EventHandler(this.Firstcomefirstserved_Load);
             this.ResumeLayout(false);
@@ -386,8 +386,6 @@ namespace OSproject
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox total;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         public System.Windows.Forms.Label label2;
@@ -417,5 +415,6 @@ namespace OSproject
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label1;
     }
 }

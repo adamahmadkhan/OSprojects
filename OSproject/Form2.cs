@@ -12,13 +12,17 @@ namespace OSproject
 {
     public partial class Dashboard : Form
     {
+        
+
+        
         public Dashboard()
         {
             InitializeComponent();
+            
 
         }
 
-       
+        cpualgothirms cpu = new cpualgothirms();
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             
@@ -37,7 +41,7 @@ namespace OSproject
 
         private void About_Click(object sender, EventArgs e)
         {
-            firstcomefirstserved1.Hide();
+            fcfs.Hide();
             developers1.Hide();
             aboutinfo1.Show();
         }
@@ -49,7 +53,7 @@ namespace OSproject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            firstcomefirstserved1.Hide();
+            fcfs.Hide();
             aboutinfo1.Hide();
             developers1.Show();
         }
@@ -66,12 +70,34 @@ namespace OSproject
 
         private void firstcome_Click(object sender, EventArgs e)
         {
+            
             aboutinfo1.Hide();
             developers1.Hide();
-            firstcomefirstserved1.Show();
+            sjf.Hide();
+            fcfs.label1.Text = "First come first served";
+            
+            fcfs.Show();
+
+
         }
 
         private void shortest_Click(object sender, EventArgs e)
+        {
+            aboutinfo1.Hide();
+            developers1.Hide();
+            fcfs.Hide();
+            sjf.label1.Text = "Shortest job first";
+           
+            sjf.Show();
+            
+        }
+
+        private void cpualgo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sjf_Load(object sender, EventArgs e)
         {
 
         }

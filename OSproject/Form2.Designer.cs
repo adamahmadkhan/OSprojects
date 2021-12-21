@@ -30,15 +30,16 @@ namespace OSproject
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.shortest = new System.Windows.Forms.Button();
             this.firstcome = new System.Windows.Forms.Button();
             this.About = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.firstcomefirstserved1 = new OSproject.cpualgothirms();
+            this.sjf = new OSproject.cpualgothirms();
+            this.fcfs = new OSproject.cpualgothirms();
             this.aboutinfo2 = new OSproject.Aboutinfo();
             this.aboutinfo1 = new OSproject.Aboutinfo();
             this.developers1 = new OSproject.Developers();
-            this.shortest = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +58,21 @@ namespace OSproject
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(183, 662);
             this.panel1.TabIndex = 0;
+            // 
+            // shortest
+            // 
+            this.shortest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.shortest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.shortest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.shortest.ForeColor = System.Drawing.Color.White;
+            this.shortest.Location = new System.Drawing.Point(9, 286);
+            this.shortest.Margin = new System.Windows.Forms.Padding(4);
+            this.shortest.Name = "shortest";
+            this.shortest.Size = new System.Drawing.Size(157, 34);
+            this.shortest.TabIndex = 4;
+            this.shortest.Text = "SJF";
+            this.shortest.UseVisualStyleBackColor = true;
+            this.shortest.Click += new System.EventHandler(this.shortest_Click);
             // 
             // firstcome
             // 
@@ -115,13 +131,24 @@ namespace OSproject
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // firstcomefirstserved1
+            // sjf
             // 
-            this.firstcomefirstserved1.Location = new System.Drawing.Point(199, 22);
-            this.firstcomefirstserved1.Name = "firstcomefirstserved1";
-            this.firstcomefirstserved1.Size = new System.Drawing.Size(878, 522);
-            this.firstcomefirstserved1.TabIndex = 4;
-            this.firstcomefirstserved1.Visible = false;
+            this.sjf.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.sjf.Location = new System.Drawing.Point(191, 22);
+            this.sjf.Name = "sjf";
+            this.sjf.Size = new System.Drawing.Size(868, 522);
+            this.sjf.TabIndex = 5;
+            this.sjf.Visible = false;
+            this.sjf.Load += new System.EventHandler(this.sjf_Load);
+            // 
+            // fcfs
+            // 
+            this.fcfs.Location = new System.Drawing.Point(199, 22);
+            this.fcfs.Name = "fcfs";
+            this.fcfs.Size = new System.Drawing.Size(878, 522);
+            this.fcfs.TabIndex = 4;
+            this.fcfs.Visible = false;
+            this.fcfs.Load += new System.EventHandler(this.cpualgo_Load);
             // 
             // aboutinfo2
             // 
@@ -154,27 +181,13 @@ namespace OSproject
             this.developers1.Visible = false;
             this.developers1.Load += new System.EventHandler(this.developers1_Load_1);
             // 
-            // shortest
-            // 
-            this.shortest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.shortest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.shortest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.shortest.ForeColor = System.Drawing.Color.White;
-            this.shortest.Location = new System.Drawing.Point(9, 286);
-            this.shortest.Margin = new System.Windows.Forms.Padding(4);
-            this.shortest.Name = "shortest";
-            this.shortest.Size = new System.Drawing.Size(157, 34);
-            this.shortest.TabIndex = 4;
-            this.shortest.Text = "SJF";
-            this.shortest.UseVisualStyleBackColor = true;
-            this.shortest.Click += new System.EventHandler(this.shortest_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1089, 662);
-            this.Controls.Add(this.firstcomefirstserved1);
+            this.Controls.Add(this.sjf);
+            this.Controls.Add(this.fcfs);
             this.Controls.Add(this.aboutinfo2);
             this.Controls.Add(this.aboutinfo1);
             this.Controls.Add(this.developers1);
@@ -198,7 +211,8 @@ namespace OSproject
         private Aboutinfo aboutinfo1;
         private Aboutinfo aboutinfo2;
         private System.Windows.Forms.Button firstcome;
-        public cpualgothirms firstcomefirstserved1;
+        public cpualgothirms fcfs;
         private System.Windows.Forms.Button shortest;
+        private cpualgothirms sjf;
     }
 }

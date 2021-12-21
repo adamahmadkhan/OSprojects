@@ -18,6 +18,7 @@ namespace OSproject
         int[] btime;
         int[] wtime;
         int[] tatime;
+        int[] p;
         int avwt;
         int avtat;
         public cpualgothirms()
@@ -108,6 +109,52 @@ namespace OSproject
         {
 
         }
+        public void shortestjob()
+        {
+            
+            wtime = new int[10];
+            tatime = new int[10];
+            wtime = new int[10];
+            int temp,pos;
+            for (int i = 0; i < totalid; i++)
+            {
+                pos = i;
+                for (int j = i + 1; j < totalid; j++)
+                {
+                    if (btime[j] < btime[pos])
+                        pos = j;
+                }
+
+                temp = btime[i];
+                btime[i] = btime[pos];
+                btime[pos] = temp;
+
+                temp = p[i];
+                p[i] = p[pos];
+                p[pos] = temp;
+            }
+                wtime[0] = 0;
+                for (int i = 1; i < totalid; i++)
+                {
+                    wtime[i] = 0;
+                    for (int j = 0; j < i; j++)
+                        wtime[i] += btime[j];
+                }
+            label5.Text = "";
+                for (int i = 0; i < totalid; i++)
+                {
+                    tatime[i] = btime[i] + wtime[i];
+                    avwt += wtime[i];
+                    avtat += tatime[i];       //Process Burst Time Waiting TurnAround Time
+                    label5.Text = label5.Text + "pid  " + p[i]+ "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
+                }
+                avwt /= totalid;
+                avtat /= totalid;
+                label6.Show();
+                label6.Text = "average waiting time: " + avwt + "\nAverage turn around time " + avtat;
+
+
+            }
         public void firstcomfirstser()
         {
             wtime = new int[10];
@@ -120,12 +167,13 @@ namespace OSproject
                 for (int j = 0; j < i; j++)
                     wtime[i] += btime[j];
             }
+            label5.Text = "";
             for (int i = 0; i < totalid; i++)
             {
                 tatime[i] = btime[i] + wtime[i];
                 avwt += wtime[i];
                 avtat += tatime[i];       //Process Burst Time Waiting TurnAround Time
-                label5.Text = label5.Text+"pid "+pid[i].Text+ "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
+                label5.Text = label5.Text+"pid  "+pid[i].Text+ "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
             }
             avwt /= totalid;
             avtat /= totalid;
@@ -137,13 +185,19 @@ namespace OSproject
         private void button1_Click(object sender, EventArgs e)
         {
              btime = new int[10];
+             p = new int[10];
              for(int i=0;i<totalid;i++)
             {
                 btime[i] = Convert.ToInt32(bt[i].Text);
+                p[i] = Convert.ToInt32(pid[i].Text);
             }
-            label5.Text = "";
-            firstcomfirstser();
-        }
+            label5.Text = "NIL";
+            if (label1.Text== "First come first served")
+                firstcomfirstser();
+            else if (label1.Text== "Shortest job first")
+                shortestjob();
+                    
+           }
 
         private void burst1_TextChanged(object sender, EventArgs e)
         {
