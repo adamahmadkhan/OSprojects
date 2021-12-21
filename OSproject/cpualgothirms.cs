@@ -19,6 +19,7 @@ namespace OSproject
         int[] wtime;
         int[] tatime;
         int[] p;
+        Label[] g = new Label[10];
         int avwt;
         int avtat;
         public cpualgothirms()
@@ -64,10 +65,22 @@ namespace OSproject
             bt[7] = burst7;
             bt[8] = burst8;
             bt[9] = burst9;
+            g[0] = g0;
+            g[1] = g1;
+            g[2] = g2;
+            g[3] = g3;
+            g[4] = g4;
+            g[5] = g5;
+            g[6] = g6;
+            g[7] = g7;
+            g[8] = g8;
+            g[9] = g9;
+            
             for (int i = 0; i < 10; i++)
             {
                 pid[i].Hide();
                 bt[i].Hide();
+                g[i].Hide();
             }
               
             for(int i=0;i<totalid;i++)
@@ -152,10 +165,19 @@ namespace OSproject
                 avtat /= totalid;
                 label6.Show();
                 label6.Text = "average waiting time: " + avwt + "\nAverage turn around time " + avtat;
-           
+              for (int i = 0; i < totalid; i++)
+               {
+                g[i].Show();
+                g[i].Text = "pid" + p[i];
+                for (int j = 0; j < btime[i]; j++)
+                {
+                    g[i].Text += " ";
+                }
+                g[i].Text += wtime[i];
+                }
 
 
-            }
+        }
         public void firstcomfirstser()
         {
             wtime = new int[10];
@@ -174,12 +196,22 @@ namespace OSproject
                 tatime[i] = btime[i] + wtime[i];
                 avwt += wtime[i];
                 avtat += tatime[i];       //Process Burst Time Waiting TurnAround Time
-                label5.Text = label5.Text+"pid  "+pid[i].Text+ "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
+                label5.Text = label5.Text + "pid  " + pid[i].Text + "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
             }
             avwt /= totalid;
             avtat /= totalid;
             label6.Show();
             label6.Text = "average waiting time: " + avwt + "\nAverage turn around time " + avtat;
+            for (int i = 0; i < totalid; i++)
+            {
+                g[i].Show();
+                g[i].Text = "pid" + p[i];
+                for (int j = 0; j < btime[i]; j++)
+                {
+                    g[i].Text+=" ";
+                }
+                g[i].Text +=wtime[i];
+            }
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -229,6 +261,16 @@ namespace OSproject
         }
 
         private void g3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void g1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void g0_Click(object sender, EventArgs e)
         {
 
         }

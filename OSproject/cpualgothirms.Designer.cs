@@ -29,10 +29,8 @@ namespace OSproject
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.total = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.id0 = new System.Windows.Forms.TextBox();
             this.id4 = new System.Windows.Forms.TextBox();
@@ -60,7 +58,18 @@ namespace OSproject
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.gantt = new System.Windows.Forms.Panel();
+            this.Gantt = new System.Windows.Forms.FlowLayoutPanel();
+            this.g1 = new System.Windows.Forms.Label();
+            this.g2 = new System.Windows.Forms.Label();
+            this.g3 = new System.Windows.Forms.Label();
+            this.g4 = new System.Windows.Forms.Label();
+            this.g5 = new System.Windows.Forms.Label();
+            this.g6 = new System.Windows.Forms.Label();
+            this.g7 = new System.Windows.Forms.Label();
+            this.g8 = new System.Windows.Forms.Label();
+            this.g9 = new System.Windows.Forms.Label();
+            this.g0 = new System.Windows.Forms.Label();
+            this.Gantt.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -83,12 +92,6 @@ namespace OSproject
             this.total.Text = "0";
             this.total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.total.TextChanged += new System.EventHandler(this.total_TextChanged);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // label2
             // 
@@ -345,20 +348,143 @@ namespace OSproject
             this.label6.Visible = false;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // gantt
+            // Gantt
             // 
-            this.gantt.BackColor = System.Drawing.Color.White;
-            this.gantt.Location = new System.Drawing.Point(3, 408);
-            this.gantt.Name = "gantt";
-            this.gantt.Size = new System.Drawing.Size(751, 37);
-            this.gantt.TabIndex = 30;
-            this.gantt.Visible = false;
+            this.Gantt.BackColor = System.Drawing.Color.White;
+            this.Gantt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Gantt.Controls.Add(this.g0);
+            this.Gantt.Controls.Add(this.g1);
+            this.Gantt.Controls.Add(this.g2);
+            this.Gantt.Controls.Add(this.g3);
+            this.Gantt.Controls.Add(this.g4);
+            this.Gantt.Controls.Add(this.g5);
+            this.Gantt.Controls.Add(this.g6);
+            this.Gantt.Controls.Add(this.g7);
+            this.Gantt.Controls.Add(this.g8);
+            this.Gantt.Controls.Add(this.g9);
+            this.Gantt.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Gantt.Location = new System.Drawing.Point(0, 433);
+            this.Gantt.Name = "Gantt";
+            this.Gantt.Size = new System.Drawing.Size(928, 31);
+            this.Gantt.TabIndex = 30;
+            // 
+            // g1
+            // 
+            this.g1.AutoSize = true;
+            this.g1.BackColor = System.Drawing.Color.Red;
+            this.g1.Location = new System.Drawing.Point(63, 0);
+            this.g1.Name = "g1";
+            this.g1.Size = new System.Drawing.Size(46, 17);
+            this.g1.TabIndex = 0;
+            this.g1.Text = "label7";
+            this.g1.Visible = false;
+            this.g1.Click += new System.EventHandler(this.g1_Click);
+            // 
+            // g2
+            // 
+            this.g2.AutoSize = true;
+            this.g2.BackColor = System.Drawing.Color.Lime;
+            this.g2.Location = new System.Drawing.Point(115, 0);
+            this.g2.Name = "g2";
+            this.g2.Size = new System.Drawing.Size(46, 17);
+            this.g2.TabIndex = 1;
+            this.g2.Text = "label8";
+            this.g2.Visible = false;
+            // 
+            // g3
+            // 
+            this.g3.AutoSize = true;
+            this.g3.BackColor = System.Drawing.Color.Aqua;
+            this.g3.Location = new System.Drawing.Point(167, 0);
+            this.g3.Name = "g3";
+            this.g3.Size = new System.Drawing.Size(46, 17);
+            this.g3.TabIndex = 2;
+            this.g3.Text = "label9";
+            this.g3.Visible = false;
+            // 
+            // g4
+            // 
+            this.g4.AutoSize = true;
+            this.g4.BackColor = System.Drawing.Color.Blue;
+            this.g4.Location = new System.Drawing.Point(219, 0);
+            this.g4.Name = "g4";
+            this.g4.Size = new System.Drawing.Size(54, 17);
+            this.g4.TabIndex = 3;
+            this.g4.Text = "label10";
+            this.g4.Visible = false;
+            // 
+            // g5
+            // 
+            this.g5.AutoSize = true;
+            this.g5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.g5.Location = new System.Drawing.Point(279, 0);
+            this.g5.Name = "g5";
+            this.g5.Size = new System.Drawing.Size(54, 17);
+            this.g5.TabIndex = 4;
+            this.g5.Text = "label11";
+            this.g5.Visible = false;
+            // 
+            // g6
+            // 
+            this.g6.AutoSize = true;
+            this.g6.BackColor = System.Drawing.Color.Gray;
+            this.g6.Location = new System.Drawing.Point(339, 0);
+            this.g6.Name = "g6";
+            this.g6.Size = new System.Drawing.Size(54, 17);
+            this.g6.TabIndex = 5;
+            this.g6.Text = "label12";
+            this.g6.Visible = false;
+            // 
+            // g7
+            // 
+            this.g7.AutoSize = true;
+            this.g7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.g7.Location = new System.Drawing.Point(399, 0);
+            this.g7.Name = "g7";
+            this.g7.Size = new System.Drawing.Size(54, 17);
+            this.g7.TabIndex = 6;
+            this.g7.Text = "label13";
+            this.g7.Visible = false;
+            // 
+            // g8
+            // 
+            this.g8.AutoSize = true;
+            this.g8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.g8.Location = new System.Drawing.Point(459, 0);
+            this.g8.Name = "g8";
+            this.g8.Size = new System.Drawing.Size(54, 17);
+            this.g8.TabIndex = 7;
+            this.g8.Text = "label14";
+            this.g8.Visible = false;
+            // 
+            // g9
+            // 
+            this.g9.AutoSize = true;
+            this.g9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.g9.Location = new System.Drawing.Point(519, 0);
+            this.g9.Name = "g9";
+            this.g9.Size = new System.Drawing.Size(54, 17);
+            this.g9.TabIndex = 8;
+            this.g9.Text = "label15";
+            this.g9.Visible = false;
+            // 
+            // g0
+            // 
+            this.g0.AutoSize = true;
+            this.g0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.g0.Location = new System.Drawing.Point(3, 0);
+            this.g0.Name = "g0";
+            this.g0.Size = new System.Drawing.Size(54, 17);
+            this.g0.TabIndex = 9;
+            this.g0.Text = "label16";
+            this.g0.Visible = false;
+            this.g0.Click += new System.EventHandler(this.g0_Click);
             // 
             // cpualgothirms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gantt);
+            this.Controls.Add(this.Gantt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
@@ -389,8 +515,10 @@ namespace OSproject
             this.Controls.Add(this.total);
             this.Controls.Add(this.label1);
             this.Name = "cpualgothirms";
-            this.Size = new System.Drawing.Size(757, 464);
+            this.Size = new System.Drawing.Size(928, 464);
             this.Load += new System.EventHandler(this.Firstcomefirstserved_Load);
+            this.Gantt.ResumeLayout(false);
+            this.Gantt.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,7 +526,6 @@ namespace OSproject
 
         #endregion
         public System.Windows.Forms.TextBox total;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox id0;
         public System.Windows.Forms.TextBox id4;
@@ -427,6 +554,16 @@ namespace OSproject
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel gantt;
+        private System.Windows.Forms.FlowLayoutPanel Gantt;
+        private System.Windows.Forms.Label g1;
+        private System.Windows.Forms.Label g2;
+        private System.Windows.Forms.Label g3;
+        private System.Windows.Forms.Label g4;
+        private System.Windows.Forms.Label g5;
+        private System.Windows.Forms.Label g6;
+        private System.Windows.Forms.Label g7;
+        private System.Windows.Forms.Label g8;
+        private System.Windows.Forms.Label g9;
+        private System.Windows.Forms.Label g0;
     }
 }
