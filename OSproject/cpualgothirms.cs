@@ -152,6 +152,7 @@ namespace OSproject
                 avtat /= totalid;
                 label6.Show();
                 label6.Text = "average waiting time: " + avwt + "\nAverage turn around time " + avtat;
+           
 
 
             }
@@ -179,8 +180,6 @@ namespace OSproject
             avtat /= totalid;
             label6.Show();
             label6.Text = "average waiting time: " + avwt + "\nAverage turn around time " + avtat;
-
-
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -215,6 +214,21 @@ namespace OSproject
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void g3_Click(object sender, EventArgs e)
         {
 
         }

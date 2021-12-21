@@ -60,6 +60,7 @@ namespace OSproject
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.gantt = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -344,10 +345,20 @@ namespace OSproject
             this.label6.Visible = false;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // gantt
+            // 
+            this.gantt.BackColor = System.Drawing.Color.White;
+            this.gantt.Location = new System.Drawing.Point(3, 408);
+            this.gantt.Name = "gantt";
+            this.gantt.Size = new System.Drawing.Size(751, 37);
+            this.gantt.TabIndex = 30;
+            this.gantt.Visible = false;
+            // 
             // cpualgothirms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gantt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
@@ -416,5 +427,6 @@ namespace OSproject
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel gantt;
     }
 }
