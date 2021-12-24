@@ -117,4 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="page1.Text" xml:space="preserve">
+    <value>CPU Scheduling is a process of determining which process will own 
+CPU for execution while another process is on hold. 
+The main task of CPU scheduling is to make sure 
+that whenever the CPU remains idle, the OS at least select 
+one of the processes available in the ready queue for execution. 
+The selection process will be carried out by the CPU scheduler.
+ It selects one of the processes in memory that are ready for execution.
+Type:
+ FCFS
+SJF
+Round Robin 
+Porirty Scheduling</value>
+  </data>
+  <data name="page3.Text" xml:space="preserve">
+    <value>Shortest Job First (SJF) is an algorithm in which the process having the smallest
+ execution time is chosen for the next execution. This scheduling 
+method can be preemptive or non-preemptive.
+but this application only works for non-preemptive approch 
+you can use SJF button on dashboard to use this feature</value>
+  </data>
+  <data name="page2.Text" xml:space="preserve">
+    <value>First Come First Serve (FCFS) is an operating system scheduling 
+algorithm that automatically executes queued requests and
+processes in order of their arrival.  In this type of 
+algorithm, processes which requests 
+the CPU first get the CPU allocation first.
+
+Press FCFS button on dashboard to use this feature</value>
+  </data>
 </root>

@@ -29,6 +29,7 @@ namespace OSproject
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aboutinfo));
             this.next = new System.Windows.Forms.Button();
             this.last = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -84,11 +85,11 @@ namespace OSproject
             // 
             this.page1.AutoSize = true;
             this.page1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.page1.Location = new System.Drawing.Point(126, 248);
+            this.page1.Location = new System.Drawing.Point(6, 44);
             this.page1.Name = "page1";
-            this.page1.Size = new System.Drawing.Size(95, 29);
+            this.page1.Size = new System.Drawing.Size(761, 348);
             this.page1.TabIndex = 0;
-            this.page1.Text = "pagee1";
+            this.page1.Text = resources.GetString("page1.Text");
             this.page1.Visible = false;
             this.page1.Click += new System.EventHandler(this.label1_Click_1);
             // 
@@ -96,11 +97,11 @@ namespace OSproject
             // 
             this.page3.AutoSize = true;
             this.page3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.page3.Location = new System.Drawing.Point(126, 248);
+            this.page3.Location = new System.Drawing.Point(6, 78);
             this.page3.Name = "page3";
-            this.page3.Size = new System.Drawing.Size(81, 29);
+            this.page3.Size = new System.Drawing.Size(862, 145);
             this.page3.TabIndex = 0;
-            this.page3.Text = "page3";
+            this.page3.Text = resources.GetString("page3.Text");
             this.page3.Visible = false;
             this.page3.Click += new System.EventHandler(this.page3_Click);
             // 
@@ -108,11 +109,11 @@ namespace OSproject
             // 
             this.page2.AutoSize = true;
             this.page2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.page2.Location = new System.Drawing.Point(140, 248);
+            this.page2.Location = new System.Drawing.Point(6, 44);
             this.page2.Name = "page2";
-            this.page2.Size = new System.Drawing.Size(81, 29);
+            this.page2.Size = new System.Drawing.Size(712, 203);
             this.page2.TabIndex = 0;
-            this.page2.Text = "page2";
+            this.page2.Text = resources.GetString("page2.Text");
             this.page2.Visible = false;
             // 
             // Aboutinfo
