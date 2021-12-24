@@ -84,7 +84,7 @@ namespace OSproject
             // 
             this.page1.AutoSize = true;
             this.page1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.page1.Location = new System.Drawing.Point(289, 248);
+            this.page1.Location = new System.Drawing.Point(126, 248);
             this.page1.Name = "page1";
             this.page1.Size = new System.Drawing.Size(95, 29);
             this.page1.TabIndex = 0;
@@ -96,7 +96,7 @@ namespace OSproject
             // 
             this.page3.AutoSize = true;
             this.page3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.page3.Location = new System.Drawing.Point(140, 155);
+            this.page3.Location = new System.Drawing.Point(126, 248);
             this.page3.Name = "page3";
             this.page3.Size = new System.Drawing.Size(81, 29);
             this.page3.TabIndex = 0;
