@@ -59,6 +59,7 @@ namespace OSproject
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Gantt = new System.Windows.Forms.FlowLayoutPanel();
+            this.g0 = new System.Windows.Forms.Label();
             this.g1 = new System.Windows.Forms.Label();
             this.g2 = new System.Windows.Forms.Label();
             this.g3 = new System.Windows.Forms.Label();
@@ -68,7 +69,6 @@ namespace OSproject
             this.g7 = new System.Windows.Forms.Label();
             this.g8 = new System.Windows.Forms.Label();
             this.g9 = new System.Windows.Forms.Label();
-            this.g0 = new System.Windows.Forms.Label();
             this.Gantt.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -368,6 +368,18 @@ namespace OSproject
             this.Gantt.Size = new System.Drawing.Size(928, 31);
             this.Gantt.TabIndex = 30;
             // 
+            // g0
+            // 
+            this.g0.AutoSize = true;
+            this.g0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.g0.Location = new System.Drawing.Point(3, 0);
+            this.g0.Name = "g0";
+            this.g0.Size = new System.Drawing.Size(54, 17);
+            this.g0.TabIndex = 9;
+            this.g0.Text = "label16";
+            this.g0.Visible = false;
+            this.g0.Click += new System.EventHandler(this.g0_Click);
+            // 
             // g1
             // 
             this.g1.AutoSize = true;
@@ -467,18 +479,6 @@ namespace OSproject
             this.g9.TabIndex = 8;
             this.g9.Text = "label15";
             this.g9.Visible = false;
-            // 
-            // g0
-            // 
-            this.g0.AutoSize = true;
-            this.g0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.g0.Location = new System.Drawing.Point(3, 0);
-            this.g0.Name = "g0";
-            this.g0.Size = new System.Drawing.Size(54, 17);
-            this.g0.TabIndex = 9;
-            this.g0.Text = "label16";
-            this.g0.Visible = false;
-            this.g0.Click += new System.EventHandler(this.g0_Click);
             // 
             // cpualgothirms
             // 

@@ -133,10 +133,10 @@ namespace OSproject
             // 
             // sjf
             // 
-            this.sjf.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.sjf.Location = new System.Drawing.Point(191, 22);
+            this.sjf.BackColor = System.Drawing.SystemColors.Control;
+            this.sjf.Location = new System.Drawing.Point(199, 22);
             this.sjf.Name = "sjf";
-            this.sjf.Size = new System.Drawing.Size(868, 522);
+            this.sjf.Size = new System.Drawing.Size(878, 522);
             this.sjf.TabIndex = 5;
             this.sjf.Visible = false;
             this.sjf.Load += new System.EventHandler(this.sjf_Load);

@@ -22,6 +22,7 @@ namespace OSproject
         Label[] g = new Label[10];
         int avwt;
         int avtat;
+        public int option = 0;
         public cpualgothirms()
         {
             InitializeComponent();
@@ -159,7 +160,7 @@ namespace OSproject
                     tatime[i] = btime[i] + wtime[i];
                     avwt += wtime[i];
                     avtat += tatime[i];       //Process Burst Time Waiting TurnAround Time
-                    label5.Text = label5.Text + "pid  " + p[i]+ "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
+                    label5.Text +="pid  " + p[i]+ "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
                 }
                 avwt /= totalid;
                 avtat /= totalid;
@@ -168,10 +169,10 @@ namespace OSproject
               for (int i = 0; i < totalid; i++)
                {
                 g[i].Show();
-                g[i].Text = "pid" + p[i];
+                g[i].Text = "p" + p[i];
                 for (int j = 0; j < btime[i]; j++)
                 {
-                    g[i].Text += " ";
+                    g[i].Text += "  ";
                 }
                 g[i].Text += wtime[i];
                 }
@@ -196,7 +197,7 @@ namespace OSproject
                 tatime[i] = btime[i] + wtime[i];
                 avwt += wtime[i];
                 avtat += tatime[i];       //Process Burst Time Waiting TurnAround Time
-                label5.Text = label5.Text + "pid  " + pid[i].Text + "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
+                label5.Text += "pid  " + pid[i].Text + "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
             }
             avwt /= totalid;
             avtat /= totalid;
@@ -205,10 +206,11 @@ namespace OSproject
             for (int i = 0; i < totalid; i++)
             {
                 g[i].Show();
-                g[i].Text = "pid" + p[i];
+                g[i].Text = "p" + p[i];
                 for (int j = 0; j < btime[i]; j++)
                 {
-                    g[i].Text+=" ";
+                    g[i].Text+="  ";
+                    
                 }
                 g[i].Text +=wtime[i];
             }
@@ -271,6 +273,11 @@ namespace OSproject
         }
 
         private void g0_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click_1(object sender, EventArgs e)
         {
 
         }

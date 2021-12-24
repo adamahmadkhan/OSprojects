@@ -121,10 +121,13 @@
     <value>17, 17</value>
   </metadata>
   <data name="label1.Text" xml:space="preserve">
-    <value>A Process Scheduler schedules different processes to be assigned to the CPU based on particular scheduling algorithms. 
-There are six popular process scheduling algorithms which we are going to discuss in this chapter
-fcps
-round robin
-</value>
+    <value>CPU Scheduling is a process of determining which process will own CPU for
+execution while another process is on hold. The main task of CPU scheduling
+is to make sure that whenever the CPU remains idle, the OS at least select
+one of the processes available in the ready queue for execution.
+ The selection process will be carried out by the CPU scheduler.
+ It selects one of the processes in memory that are ready for execution.
+
+Types:</value>
   </data>
 </root>

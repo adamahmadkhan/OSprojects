@@ -12,9 +12,9 @@ namespace OSproject
 {
     public partial class Dashboard : Form
     {
-        
 
-        
+
+        cpualgothirms c = new cpualgothirms();
         public Dashboard()
         {
             InitializeComponent();
@@ -55,6 +55,7 @@ namespace OSproject
         {
             fcfs.Hide();
             aboutinfo1.Hide();
+            c.option = 5;
             developers1.Show();
         }
 
