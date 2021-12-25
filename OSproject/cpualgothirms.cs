@@ -15,6 +15,7 @@ namespace OSproject
         TextBox[] pid;
         int totalid;
         TextBox[] bt;
+        TextBox[] PRI;
         int[] btime;
         int[] wtime;
         int[] tatime;
@@ -23,6 +24,7 @@ namespace OSproject
         int avwt;
         int avtat;
         public int option = 0;
+        
         public cpualgothirms()
         {
             InitializeComponent();
@@ -89,6 +91,17 @@ namespace OSproject
                 pid[i].Show();
                 bt[i].Show();
             }
+            if(label1.Text== "Priority")
+                for (int i = 0; i < 10; i++)
+                {
+                    PRI[i].Hide();
+                }
+
+            for (int i = 0; i < totalid; i++)
+            {
+                PRI[i].Show();
+            }
+
         }
         private void total_TextChanged(object sender, EventArgs e)
         {
@@ -101,6 +114,24 @@ namespace OSproject
             totalid = Convert.ToInt32(total.Text);
             label2.Show();
             button1.Show();
+            if (label1.Text == "Priority")
+            {
+                PRI = new TextBox[10];
+                PRI[0] = pri0;
+                PRI[1] = pri1;
+                PRI[2] = pri2;
+                PRI[3] = pri3;
+                PRI[4] = pri4;
+                PRI[5] = pri5;
+                PRI[6] = pri6;
+                PRI[7] = pri7;
+                PRI[8] = pri8;
+                PRI[9] = pri9;
+                for (int i = 0; i < totalid; i++)
+                {
+                    PRI[i].Show();
+                }
+            }
             reset();
         }
 
@@ -120,6 +151,10 @@ namespace OSproject
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void Priorityscheduling()
         {
 
         }
@@ -224,12 +259,17 @@ namespace OSproject
                 btime[i] = Convert.ToInt32(bt[i].Text);
                 p[i] = Convert.ToInt32(pid[i].Text);
             }
-            label5.Text = "NIL";
-            if (label1.Text== "First come first served")
+          
+            
+                label5.Text = "NIL";
+            if (label1.Text == "First come first served")
                 firstcomfirstser();
-            else if (label1.Text== "Shortest job first")
+            else if (label1.Text == "Shortest job first")
                 shortestjob();
-                    
+            else if (label1.Text == "Priority")
+                Priorityscheduling();
+
+
            }
 
         private void burst1_TextChanged(object sender, EventArgs e)
@@ -244,7 +284,8 @@ namespace OSproject
 
         private void Firstcomefirstserved_Load(object sender, EventArgs e)
         {
-
+            
+            
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -278,6 +319,61 @@ namespace OSproject
         }
 
         private void label7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prioritylabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri0_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pri6_TextChanged(object sender, EventArgs e)
         {
 
         }

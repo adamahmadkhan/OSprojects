@@ -20,10 +20,11 @@ namespace OSproject
         }
         private void Aboutinfo_Load(object sender, EventArgs e)
         {
-            pg= new Label[3];
+            pg= new Label[4];
             pg[0] = page1;
             pg[1] = page2;
             pg[2] = page3;
+            pg[3] = page4;
             pg[1].Hide();
             pg[2].Hide();
             pg[0].Show();
@@ -63,7 +64,7 @@ namespace OSproject
                 last.Show();
             pg[page].Hide();
             page = page + 1;
-            page = page % 3;
+            page = page % 4;
             label2.Text = "page" + page;
             pg[page].Show();
             
@@ -73,7 +74,7 @@ namespace OSproject
         {
             pg[page].Hide();
             page = page - 1;
-            page = page % 3;
+            page = page % 4;
             if (page == 0)
                 last.Hide();
             label2.Text = "page" + page;
@@ -102,6 +103,11 @@ namespace OSproject
         }
 
         private void page3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void page4_Click(object sender, EventArgs e)
         {
 
         }

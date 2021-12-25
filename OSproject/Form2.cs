@@ -21,8 +21,6 @@ namespace OSproject
             
 
         }
-
-        cpualgothirms cpu = new cpualgothirms();
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             
@@ -55,7 +53,7 @@ namespace OSproject
         {
             fcfs.Hide();
             aboutinfo1.Hide();
-            c.option = 5;
+            Prioritysch.Hide();
             developers1.Show();
         }
 
@@ -75,8 +73,8 @@ namespace OSproject
             aboutinfo1.Hide();
             developers1.Hide();
             sjf.Hide();
+            Prioritysch.Hide();
             fcfs.label1.Text = "First come first served";
-            
             fcfs.Show();
 
 
@@ -87,8 +85,8 @@ namespace OSproject
             aboutinfo1.Hide();
             developers1.Hide();
             fcfs.Hide();
+            Prioritysch.Hide();
             sjf.label1.Text = "Shortest job first";
-           
             sjf.Show();
             
         }
@@ -99,6 +97,21 @@ namespace OSproject
         }
 
         private void sjf_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            aboutinfo1.Hide();
+            developers1.Hide();
+            fcfs.Hide();
+            sjf.Hide();
+            Prioritysch.label1.Text = "Priority";
+            Prioritysch.Show();
+        }
+
+        private void Prioritysch_Load(object sender, EventArgs e)
         {
 
         }

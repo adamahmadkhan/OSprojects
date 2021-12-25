@@ -69,6 +69,17 @@ namespace OSproject
             this.g7 = new System.Windows.Forms.Label();
             this.g8 = new System.Windows.Forms.Label();
             this.g9 = new System.Windows.Forms.Label();
+            this.pri6 = new System.Windows.Forms.TextBox();
+            this.pri7 = new System.Windows.Forms.TextBox();
+            this.pri8 = new System.Windows.Forms.TextBox();
+            this.pri9 = new System.Windows.Forms.TextBox();
+            this.pri5 = new System.Windows.Forms.TextBox();
+            this.pri1 = new System.Windows.Forms.TextBox();
+            this.pri2 = new System.Windows.Forms.TextBox();
+            this.pri3 = new System.Windows.Forms.TextBox();
+            this.pri4 = new System.Windows.Forms.TextBox();
+            this.pri0 = new System.Windows.Forms.TextBox();
+            this.prioritylabel = new System.Windows.Forms.Label();
             this.Gantt.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -480,10 +491,123 @@ namespace OSproject
             this.g9.Text = "label15";
             this.g9.Visible = false;
             // 
+            // pri6
+            // 
+            this.pri6.Location = new System.Drawing.Point(263, 247);
+            this.pri6.Name = "pri6";
+            this.pri6.Size = new System.Drawing.Size(100, 22);
+            this.pri6.TabIndex = 40;
+            this.pri6.Visible = false;
+            this.pri6.TextChanged += new System.EventHandler(this.pri6_TextChanged);
+            // 
+            // pri7
+            // 
+            this.pri7.Location = new System.Drawing.Point(263, 275);
+            this.pri7.Name = "pri7";
+            this.pri7.Size = new System.Drawing.Size(100, 22);
+            this.pri7.TabIndex = 39;
+            this.pri7.Visible = false;
+            this.pri7.TextChanged += new System.EventHandler(this.pri7_TextChanged);
+            // 
+            // pri8
+            // 
+            this.pri8.Location = new System.Drawing.Point(263, 303);
+            this.pri8.Name = "pri8";
+            this.pri8.Size = new System.Drawing.Size(100, 22);
+            this.pri8.TabIndex = 38;
+            this.pri8.Visible = false;
+            this.pri8.TextChanged += new System.EventHandler(this.pri8_TextChanged);
+            // 
+            // pri9
+            // 
+            this.pri9.Location = new System.Drawing.Point(263, 335);
+            this.pri9.Name = "pri9";
+            this.pri9.Size = new System.Drawing.Size(100, 22);
+            this.pri9.TabIndex = 37;
+            this.pri9.Visible = false;
+            this.pri9.TextChanged += new System.EventHandler(this.pri9_TextChanged);
+            // 
+            // pri5
+            // 
+            this.pri5.Location = new System.Drawing.Point(263, 219);
+            this.pri5.Name = "pri5";
+            this.pri5.Size = new System.Drawing.Size(100, 22);
+            this.pri5.TabIndex = 36;
+            this.pri5.Visible = false;
+            this.pri5.TextChanged += new System.EventHandler(this.pri5_TextChanged);
+            // 
+            // pri1
+            // 
+            this.pri1.Location = new System.Drawing.Point(263, 107);
+            this.pri1.Name = "pri1";
+            this.pri1.Size = new System.Drawing.Size(100, 22);
+            this.pri1.TabIndex = 35;
+            this.pri1.Visible = false;
+            this.pri1.TextChanged += new System.EventHandler(this.pri1_TextChanged);
+            // 
+            // pri2
+            // 
+            this.pri2.Location = new System.Drawing.Point(263, 135);
+            this.pri2.Name = "pri2";
+            this.pri2.Size = new System.Drawing.Size(100, 22);
+            this.pri2.TabIndex = 34;
+            this.pri2.Visible = false;
+            this.pri2.TextChanged += new System.EventHandler(this.pri2_TextChanged);
+            // 
+            // pri3
+            // 
+            this.pri3.Location = new System.Drawing.Point(263, 163);
+            this.pri3.Name = "pri3";
+            this.pri3.Size = new System.Drawing.Size(100, 22);
+            this.pri3.TabIndex = 33;
+            this.pri3.Visible = false;
+            this.pri3.TextChanged += new System.EventHandler(this.pri3_TextChanged);
+            // 
+            // pri4
+            // 
+            this.pri4.Location = new System.Drawing.Point(263, 191);
+            this.pri4.Name = "pri4";
+            this.pri4.Size = new System.Drawing.Size(100, 22);
+            this.pri4.TabIndex = 32;
+            this.pri4.Visible = false;
+            this.pri4.TextChanged += new System.EventHandler(this.pri4_TextChanged);
+            // 
+            // pri0
+            // 
+            this.pri0.Location = new System.Drawing.Point(263, 79);
+            this.pri0.Name = "pri0";
+            this.pri0.Size = new System.Drawing.Size(100, 22);
+            this.pri0.TabIndex = 31;
+            this.pri0.Visible = false;
+            this.pri0.TextChanged += new System.EventHandler(this.pri0_TextChanged);
+            // 
+            // prioritylabel
+            // 
+            this.prioritylabel.AutoSize = true;
+            this.prioritylabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prioritylabel.Location = new System.Drawing.Point(267, 48);
+            this.prioritylabel.Name = "prioritylabel";
+            this.prioritylabel.Size = new System.Drawing.Size(65, 25);
+            this.prioritylabel.TabIndex = 41;
+            this.prioritylabel.Text = "prority";
+            this.prioritylabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.prioritylabel.Click += new System.EventHandler(this.prioritylabel_Click);
+            // 
             // cpualgothirms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.prioritylabel);
+            this.Controls.Add(this.pri6);
+            this.Controls.Add(this.pri7);
+            this.Controls.Add(this.pri8);
+            this.Controls.Add(this.pri9);
+            this.Controls.Add(this.pri5);
+            this.Controls.Add(this.pri1);
+            this.Controls.Add(this.pri2);
+            this.Controls.Add(this.pri3);
+            this.Controls.Add(this.pri4);
+            this.Controls.Add(this.pri0);
             this.Controls.Add(this.Gantt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -565,5 +689,16 @@ namespace OSproject
         private System.Windows.Forms.Label g8;
         private System.Windows.Forms.Label g9;
         private System.Windows.Forms.Label g0;
+        public System.Windows.Forms.TextBox pri6;
+        public System.Windows.Forms.TextBox pri7;
+        public System.Windows.Forms.TextBox pri8;
+        public System.Windows.Forms.TextBox pri9;
+        public System.Windows.Forms.TextBox pri5;
+        public System.Windows.Forms.TextBox pri1;
+        public System.Windows.Forms.TextBox pri2;
+        public System.Windows.Forms.TextBox pri3;
+        public System.Windows.Forms.TextBox pri4;
+        public System.Windows.Forms.TextBox pri0;
+        public System.Windows.Forms.Label prioritylabel;
     }
 }

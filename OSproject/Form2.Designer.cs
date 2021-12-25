@@ -35,6 +35,8 @@ namespace OSproject
             this.About = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.Priority = new System.Windows.Forms.Button();
+            this.Prioritysch = new OSproject.cpualgothirms();
             this.sjf = new OSproject.cpualgothirms();
             this.fcfs = new OSproject.cpualgothirms();
             this.aboutinfo2 = new OSproject.Aboutinfo();
@@ -46,6 +48,7 @@ namespace OSproject
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.Priority);
             this.panel1.Controls.Add(this.shortest);
             this.panel1.Controls.Add(this.firstcome);
             this.panel1.Controls.Add(this.About);
@@ -131,6 +134,30 @@ namespace OSproject
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Priority
+            // 
+            this.Priority.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Priority.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Priority.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Priority.ForeColor = System.Drawing.Color.White;
+            this.Priority.Location = new System.Drawing.Point(9, 328);
+            this.Priority.Margin = new System.Windows.Forms.Padding(4);
+            this.Priority.Name = "Priority";
+            this.Priority.Size = new System.Drawing.Size(157, 34);
+            this.Priority.TabIndex = 5;
+            this.Priority.Text = "Priority";
+            this.Priority.UseVisualStyleBackColor = true;
+            this.Priority.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Prioritysch
+            // 
+            this.Prioritysch.Location = new System.Drawing.Point(191, 22);
+            this.Prioritysch.Name = "Prioritysch";
+            this.Prioritysch.Size = new System.Drawing.Size(886, 530);
+            this.Prioritysch.TabIndex = 6;
+            this.Prioritysch.Visible = false;
+            this.Prioritysch.Load += new System.EventHandler(this.Prioritysch_Load);
+            // 
             // sjf
             // 
             this.sjf.BackColor = System.Drawing.SystemColors.Control;
@@ -186,6 +213,7 @@ namespace OSproject
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1089, 662);
+            this.Controls.Add(this.Prioritysch);
             this.Controls.Add(this.sjf);
             this.Controls.Add(this.fcfs);
             this.Controls.Add(this.aboutinfo2);
@@ -214,5 +242,7 @@ namespace OSproject
         public cpualgothirms fcfs;
         private System.Windows.Forms.Button shortest;
         private cpualgothirms sjf;
+        private System.Windows.Forms.Button Priority;
+        private cpualgothirms Prioritysch;
     }
 }

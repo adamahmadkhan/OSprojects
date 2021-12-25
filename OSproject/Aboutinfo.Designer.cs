@@ -36,6 +36,7 @@ namespace OSproject
             this.page1 = new System.Windows.Forms.Label();
             this.page3 = new System.Windows.Forms.Label();
             this.page2 = new System.Windows.Forms.Label();
+            this.page4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // next
@@ -85,7 +86,7 @@ namespace OSproject
             // 
             this.page1.AutoSize = true;
             this.page1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.page1.Location = new System.Drawing.Point(6, 44);
+            this.page1.Location = new System.Drawing.Point(6, 30);
             this.page1.Name = "page1";
             this.page1.Size = new System.Drawing.Size(761, 348);
             this.page1.TabIndex = 0;
@@ -97,7 +98,7 @@ namespace OSproject
             // 
             this.page3.AutoSize = true;
             this.page3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.page3.Location = new System.Drawing.Point(6, 78);
+            this.page3.Location = new System.Drawing.Point(-5, 78);
             this.page3.Name = "page3";
             this.page3.Size = new System.Drawing.Size(862, 145);
             this.page3.TabIndex = 0;
@@ -116,11 +117,24 @@ namespace OSproject
             this.page2.Text = resources.GetString("page2.Text");
             this.page2.Visible = false;
             // 
+            // page4
+            // 
+            this.page4.AutoSize = true;
+            this.page4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.page4.Location = new System.Drawing.Point(6, 30);
+            this.page4.Name = "page4";
+            this.page4.Size = new System.Drawing.Size(717, 174);
+            this.page4.TabIndex = 5;
+            this.page4.Text = resources.GetString("page4.Text");
+            this.page4.Visible = false;
+            this.page4.Click += new System.EventHandler(this.page4_Click);
+            // 
             // Aboutinfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.page4);
             this.Controls.Add(this.page1);
             this.Controls.Add(this.page3);
             this.Controls.Add(this.page2);
@@ -143,5 +157,6 @@ namespace OSproject
         private System.Windows.Forms.Label page1;
         private System.Windows.Forms.Label page3;
         private System.Windows.Forms.Label page2;
+        private System.Windows.Forms.Label page4;
     }
 }

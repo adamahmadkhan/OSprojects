@@ -147,4 +147,12 @@ the CPU first get the CPU allocation first.
 
 Press FCFS button on dashboard to use this feature</value>
   </data>
+  <data name="page4.Text" xml:space="preserve">
+    <value>A CPU algorithm that schedules processes based on priority.
+It used in Operating systems for performing batch processes. 
+If two jobs having the same priority are READY, it works on a
+FIRST COME, FIRST SERVED basis. In priority scheduling, a 
+number is assigned to each process that indicates its priority level.
+you can use this feature by Priority button on Dashboard</value>
+  </data>
 </root>
