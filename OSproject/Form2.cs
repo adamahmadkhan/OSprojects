@@ -29,7 +29,11 @@ namespace OSproject
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            fcfs.Hide();
+            developers1.Hide();
+            sjf.Hide();
+            Prioritysch.Hide();
+            aboutinfo1.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -41,6 +45,8 @@ namespace OSproject
         {
             fcfs.Hide();
             developers1.Hide();
+            sjf.Hide();
+            Prioritysch.Hide();
             aboutinfo1.Show();
         }
 
