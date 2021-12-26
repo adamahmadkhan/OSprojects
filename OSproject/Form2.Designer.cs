@@ -30,24 +30,27 @@ namespace OSproject
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Priority = new System.Windows.Forms.Button();
             this.shortest = new System.Windows.Forms.Button();
             this.firstcome = new System.Windows.Forms.Button();
             this.About = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.Priority = new System.Windows.Forms.Button();
+            this.RR = new OSproject.cpualgothirms();
             this.Prioritysch = new OSproject.cpualgothirms();
             this.sjf = new OSproject.cpualgothirms();
             this.fcfs = new OSproject.cpualgothirms();
             this.aboutinfo2 = new OSproject.Aboutinfo();
             this.aboutinfo1 = new OSproject.Aboutinfo();
             this.developers1 = new OSproject.Developers();
+            this.RRBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.RRBTN);
             this.panel1.Controls.Add(this.Priority);
             this.panel1.Controls.Add(this.shortest);
             this.panel1.Controls.Add(this.firstcome);
@@ -61,6 +64,21 @@ namespace OSproject
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(183, 662);
             this.panel1.TabIndex = 0;
+            // 
+            // Priority
+            // 
+            this.Priority.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Priority.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Priority.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Priority.ForeColor = System.Drawing.Color.White;
+            this.Priority.Location = new System.Drawing.Point(9, 328);
+            this.Priority.Margin = new System.Windows.Forms.Padding(4);
+            this.Priority.Name = "Priority";
+            this.Priority.Size = new System.Drawing.Size(157, 34);
+            this.Priority.TabIndex = 5;
+            this.Priority.Text = "Priority";
+            this.Priority.UseVisualStyleBackColor = true;
+            this.Priority.Click += new System.EventHandler(this.button2_Click);
             // 
             // shortest
             // 
@@ -134,26 +152,20 @@ namespace OSproject
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Priority
+            // RR
             // 
-            this.Priority.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Priority.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.Priority.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Priority.ForeColor = System.Drawing.Color.White;
-            this.Priority.Location = new System.Drawing.Point(9, 328);
-            this.Priority.Margin = new System.Windows.Forms.Padding(4);
-            this.Priority.Name = "Priority";
-            this.Priority.Size = new System.Drawing.Size(157, 34);
-            this.Priority.TabIndex = 5;
-            this.Priority.Text = "Priority";
-            this.Priority.UseVisualStyleBackColor = true;
-            this.Priority.Click += new System.EventHandler(this.button2_Click);
+            this.RR.Location = new System.Drawing.Point(199, 22);
+            this.RR.Name = "RR";
+            this.RR.Size = new System.Drawing.Size(878, 522);
+            this.RR.TabIndex = 7;
+            this.RR.Visible = false;
+            this.RR.Load += new System.EventHandler(this.RR_Load);
             // 
             // Prioritysch
             // 
-            this.Prioritysch.Location = new System.Drawing.Point(191, 22);
+            this.Prioritysch.Location = new System.Drawing.Point(199, 22);
             this.Prioritysch.Name = "Prioritysch";
-            this.Prioritysch.Size = new System.Drawing.Size(886, 530);
+            this.Prioritysch.Size = new System.Drawing.Size(878, 522);
             this.Prioritysch.TabIndex = 6;
             this.Prioritysch.Visible = false;
             this.Prioritysch.Load += new System.EventHandler(this.Prioritysch_Load);
@@ -208,11 +220,27 @@ namespace OSproject
             this.developers1.Visible = false;
             this.developers1.Load += new System.EventHandler(this.developers1_Load_1);
             // 
+            // RRBTN
+            // 
+            this.RRBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.RRBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.RRBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RRBTN.ForeColor = System.Drawing.Color.White;
+            this.RRBTN.Location = new System.Drawing.Point(9, 370);
+            this.RRBTN.Margin = new System.Windows.Forms.Padding(4);
+            this.RRBTN.Name = "RRBTN";
+            this.RRBTN.Size = new System.Drawing.Size(157, 34);
+            this.RRBTN.TabIndex = 6;
+            this.RRBTN.Text = "RoundRobin";
+            this.RRBTN.UseVisualStyleBackColor = true;
+            this.RRBTN.Click += new System.EventHandler(this.RRBTN_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1089, 662);
+            this.Controls.Add(this.RR);
             this.Controls.Add(this.Prioritysch);
             this.Controls.Add(this.sjf);
             this.Controls.Add(this.fcfs);
@@ -244,5 +272,7 @@ namespace OSproject
         private cpualgothirms sjf;
         private System.Windows.Forms.Button Priority;
         private cpualgothirms Prioritysch;
+        private cpualgothirms RR;
+        private System.Windows.Forms.Button RRBTN;
     }
 }

@@ -30,6 +30,7 @@ namespace OSproject
         private void label1_Click(object sender, EventArgs e)
         {
             fcfs.Hide();
+            RR.Hide();
             developers1.Hide();
             sjf.Hide();
             Prioritysch.Hide();
@@ -46,6 +47,7 @@ namespace OSproject
             fcfs.Hide();
             developers1.Hide();
             sjf.Hide();
+            RR.Hide();
             Prioritysch.Hide();
             aboutinfo1.Show();
         }
@@ -60,6 +62,7 @@ namespace OSproject
             fcfs.Hide();
             aboutinfo1.Hide();
             Prioritysch.Hide();
+            RR.Hide();
             developers1.Show();
         }
 
@@ -79,6 +82,7 @@ namespace OSproject
             aboutinfo1.Hide();
             developers1.Hide();
             sjf.Hide();
+            RR.Hide();
             Prioritysch.Hide();
             fcfs.label1.Text = "First come first served";
             fcfs.Show();
@@ -91,6 +95,7 @@ namespace OSproject
             aboutinfo1.Hide();
             developers1.Hide();
             fcfs.Hide();
+            RR.Hide();
             Prioritysch.Hide();
             sjf.label1.Text = "Shortest job first";
             sjf.Show();
@@ -113,13 +118,35 @@ namespace OSproject
             developers1.Hide();
             fcfs.Hide();
             sjf.Hide();
+            RR.Hide();
             Prioritysch.label1.Text = "Priority";
+            Prioritysch.prioritylabel.Show();
+            Prioritysch.label4.Text ="Process Burst Waiting TurnAround Prority";
             Prioritysch.Show();
         }
 
         private void Prioritysch_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void RR_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void RRBTN_Click(object sender, EventArgs e)
+        {
+            aboutinfo1.Hide();
+            developers1.Hide();
+            fcfs.Hide();
+            sjf.Hide();
+            Prioritysch.Hide();
+            RR.label1.Text = "Round Robin";
+            RR.prioritylabel.Text = "Arrival time";
+            Prioritysch.label4.Text = "Process Burst Waiting TurnAround Arrival";
+            RR.prioritylabel.Show();
+            RR.Show();
         }
     }
 }

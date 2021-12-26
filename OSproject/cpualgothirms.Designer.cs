@@ -80,6 +80,8 @@ namespace OSproject
             this.pri4 = new System.Windows.Forms.TextBox();
             this.pri0 = new System.Windows.Forms.TextBox();
             this.prioritylabel = new System.Windows.Forms.Label();
+            this.timeslice = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.Gantt.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -591,12 +593,36 @@ namespace OSproject
             this.prioritylabel.TabIndex = 41;
             this.prioritylabel.Text = "prority";
             this.prioritylabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.prioritylabel.Visible = false;
             this.prioritylabel.Click += new System.EventHandler(this.prioritylabel_Click);
+            // 
+            // timeslice
+            // 
+            this.timeslice.Location = new System.Drawing.Point(369, 163);
+            this.timeslice.Name = "timeslice";
+            this.timeslice.Size = new System.Drawing.Size(100, 22);
+            this.timeslice.TabIndex = 42;
+            this.timeslice.Visible = false;
+            this.timeslice.TextChanged += new System.EventHandler(this.timeslice_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(369, 135);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 25);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Time Slice";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label7.Visible = false;
             // 
             // cpualgothirms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.timeslice);
             this.Controls.Add(this.prioritylabel);
             this.Controls.Add(this.pri6);
             this.Controls.Add(this.pri7);
@@ -673,7 +699,6 @@ namespace OSproject
         public System.Windows.Forms.TextBox burst3;
         public System.Windows.Forms.TextBox burst4;
         public System.Windows.Forms.TextBox burst0;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -700,5 +725,8 @@ namespace OSproject
         public System.Windows.Forms.TextBox pri4;
         public System.Windows.Forms.TextBox pri0;
         public System.Windows.Forms.Label prioritylabel;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox timeslice;
+        public System.Windows.Forms.Label label7;
     }
 }

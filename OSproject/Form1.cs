@@ -37,7 +37,7 @@ namespace OSproject
                 
             }
             else
-                MessageBox.Show("Invalid");
+                MessageBox.Show("Invalid Username or Password");
             }
 
         private void label3_Click(object sender, EventArgs e)

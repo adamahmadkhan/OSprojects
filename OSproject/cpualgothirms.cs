@@ -24,6 +24,7 @@ namespace OSproject
         Label[] g = new Label[10];
         int avwt;
         int avtat;
+        int time_quantum;
         public int option = 0;
         
         public cpualgothirms()
@@ -92,7 +93,7 @@ namespace OSproject
                 pid[i].Show();
                 bt[i].Show();
             }
-            if (label1.Text == "Priority")
+            if (label1.Text == "Priority" || label1.Text == "Round Robin")
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -116,7 +117,7 @@ namespace OSproject
             totalid = Convert.ToInt32(total.Text);
             label2.Show();
             button1.Show();
-            if (label1.Text == "Priority")
+            if (label1.Text == "Priority" || label1.Text=="Round Robin")
             {
                 PRI = new TextBox[10];
                 PRI[0] = pri0;
@@ -134,6 +135,7 @@ namespace OSproject
                     PRI[i].Show();
                 }
             }
+
             reset();
         }
 
@@ -195,7 +197,7 @@ namespace OSproject
                 tatime[i] = btime[i] + wtime[i];
                 avwt += wtime[i];
                 avtat += tatime[i];       //Process Burst Time Waiting TurnAround Time
-                label5.Text += "pid  " + p[i] + "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + " \n";
+                label5.Text += "pid  " + p[i] + "   " + btime[i] + "        " + wtime[i] + "        " + tatime[i] + "            "+po[i]+"\n";
             }
             avwt /= totalid;
             avtat /= totalid;
@@ -259,13 +261,19 @@ namespace OSproject
               for (int i = 0; i < totalid; i++)
                {
                 g[i].Show();
-                g[i].Text = "p" + p[i];
-                for (int j = 0; j < btime[i]; j++)
+                g[i].Text = wtime[i]+"";
+                for (int j = 0; j < btime[i]/2; j++)
                 {
-                    g[i].Text += "  ";
+                    g[i].Text += " ";
                 }
-                g[i].Text += wtime[i];
+                    g[i].Text += " p " + p[i];
+                for (int j = 0; j < btime[i] / 2; j++)
+                {
+                    g[i].Text += " ";
                 }
+                g[totalid].Show();
+                g[totalid].Text = " "+ tatime[totalid - 1];
+              }
 
 
         }
@@ -315,19 +323,21 @@ namespace OSproject
                 btime[i] = Convert.ToInt32(bt[i].Text);
                 p[i] = Convert.ToInt32(pid[i].Text);
             }
-            if (label1.Text == "Priority")
+            if (label1.Text == "Priority" ||label1.Text == "Round Robin")
             {
                 for (int i = 0; i < totalid; i++)
                 {
                     po[i] = Convert.ToInt32(PRI[i].Text);
                 }
+                if (label1.Text == "Round Robin")
+                    time_quantum = Convert.ToInt32(timeslice.Text);
             }
                 label5.Text = "NIL";
             if (label1.Text == "First come first served")
                 firstcomfirstser();
             else if (label1.Text == "Shortest job first")
                 shortestjob();
-            else if (label1.Text == "Priority")
+            else if (label1.Text == "Priority" || label1.Text == "Round Robin")
                 Priorityscheduling();
 
 
@@ -435,6 +445,11 @@ namespace OSproject
         }
 
         private void pri6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timeslice_TextChanged(object sender, EventArgs e)
         {
 
         }
