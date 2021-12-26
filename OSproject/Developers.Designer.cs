@@ -34,6 +34,8 @@ namespace OSproject
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Hussain = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -73,16 +75,41 @@ namespace OSproject
             // 
             this.Hussain.AutoSize = true;
             this.Hussain.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hussain.Location = new System.Drawing.Point(164, 49);
+            this.Hussain.Location = new System.Drawing.Point(147, 32);
             this.Hussain.Name = "Hussain";
-            this.Hussain.Size = new System.Drawing.Size(53, 21);
+            this.Hussain.Size = new System.Drawing.Size(470, 63);
             this.Hussain.TabIndex = 9;
-            this.Hussain.Text = "label1";
+            this.Hussain.Text = "Hussain Aslam FA19-BCS-090 i belong to punjab,\r\nRahim yar khan being the member o" +
+    "f IEEE you can contact\r\nme by sending your quries to FA19-BCS_090@cuiatd.edu.pk";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label1.Location = new System.Drawing.Point(48, 214);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(470, 63);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Tayyab Charsi FA19-BCS-085 i belong to punjab,\r\nRahim yar khan being the member o" +
+    "f IEEE you can contact\r\nme by sending your quries to FA19-BCS_085@cuiatd.edu.pk";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(147, 375);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(506, 105);
+            this.label2.TabIndex = 11;
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // Developers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Hussain);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
@@ -103,5 +130,7 @@ namespace OSproject
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label Hussain;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
