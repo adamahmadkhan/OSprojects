@@ -143,9 +143,9 @@ namespace OSproject
             sjf.Hide();
             Prioritysch.Hide();
             RR.label1.Text = "Round Robin";
-            RR.prioritylabel.Text = "Arrival time";
-            Prioritysch.label4.Text = "Process Burst Waiting TurnAround Arrival";
-            RR.prioritylabel.Show();
+            RR.label7.Show();
+            RR.timeslice.Show();
+            RR.label4.Text = "Process Waiting TurnAround";
             RR.Show();
         }
     }

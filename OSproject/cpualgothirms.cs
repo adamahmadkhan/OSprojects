@@ -26,7 +26,7 @@ namespace OSproject
         int avtat;
         int time_quantum;
         public int option = 0;
-        
+
         public cpualgothirms()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace OSproject
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -80,20 +80,20 @@ namespace OSproject
             g[7] = g7;
             g[8] = g8;
             g[9] = g9;
-            
+
             for (int i = 0; i < 10; i++)
             {
                 pid[i].Hide();
                 bt[i].Hide();
                 g[i].Hide();
             }
-              
-            for(int i=0;i<totalid;i++)
+
+            for (int i = 0; i < totalid; i++)
             {
                 pid[i].Show();
                 bt[i].Show();
             }
-            if (label1.Text == "Priority" || label1.Text == "Round Robin")
+            if (label1.Text == "Priority")
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -109,7 +109,7 @@ namespace OSproject
         private void total_TextChanged(object sender, EventArgs e)
         {
 
-            
+
         }
 
         private void sub_Click(object sender, EventArgs e)
@@ -117,7 +117,7 @@ namespace OSproject
             totalid = Convert.ToInt32(total.Text);
             label2.Show();
             button1.Show();
-            if (label1.Text == "Priority" || label1.Text=="Round Robin")
+            if (label1.Text == "Priority")
             {
                 PRI = new TextBox[10];
                 PRI[0] = pri0;
@@ -156,6 +156,78 @@ namespace OSproject
 
         private void label4_Click(object sender, EventArgs e)
         {
+
+        }
+        public void RoundRobin()
+        {
+            wtime = new int[10];
+            tatime = new int[10];
+            int[] pidp = new int[30];
+            int[] btp = new int[30];
+            int[] ttp = new int[30];
+            int[] wtp = new int[30];
+           
+            int k, totaltime = 0;
+            for (int i = 0; i < totalid; i++)
+            {
+                totaltime = totaltime + btime[i];
+            }
+            ttp[0] = 0;
+            k = 1;
+            for (int j = 0; j <= totaltime; j++)
+            {
+                for (int i = 0; i < totalid; i++)
+                {
+                    if (btime[i] != 0)
+                    {
+                        pidp[k] = i;
+                        if (btime[i] - time_quantum < 0)
+                        {
+                            wtp[k] = ttp[k - 1];
+                            btp[k] = btime[i];
+                            ttp[k] = wtp[k] + btime[i];
+                            btime[i] = 0;
+                            k++;
+                        }
+                        else
+                        {
+                            wtp[k] = ttp[k - 1];
+                            ttp[k] = wtp[k] + time_quantum;
+                            btime[i] = btime[i] - time_quantum;
+                            k++;
+                        }
+                    }
+                }
+            }
+            label5.Text = "";
+            for (int i = 1; i < k; i++)
+            {
+                label5.Text += "pid  " + pidp[i] + "   " + "   " + wtp[i] +"     "+"    "+ttp[i]+ "\n";
+                avwt += wtp[i];
+                avtat += ttp[i];
+            }
+            avwt /= totalid;
+            avtat /= totalid;
+            label6.Show();
+            label6.Text = "average waiting time: " + avwt + "\nAverage turn around time " + avtat;
+            int temp;
+            for (int i = 1; i < k; i++)
+            {
+                temp = btime[i-1] / time_quantum;
+                g[i].Show();
+                g[i].Text = wtp[i] + "";
+                for (int j = 0; j < temp / 2; j++)
+                {
+                    g[i].Text += " ";
+                }
+                g[i].Text += " p " + pidp[i];
+                for (int j = 0; j < temp / 2; j++)
+                {
+                    g[i].Text += " ";
+                }
+
+            }
+
 
         }
         public void Priorityscheduling()
@@ -206,13 +278,30 @@ namespace OSproject
             for (int i = 0; i < totalid; i++)
             {
                 g[i].Show();
+                g[i].Text = wtime[i] + "";
+                for (int j = 0; j < btime[i] / 2; j++)
+                {
+                    g[i].Text += " ";
+                }
+                g[i].Text += " p " + p[i];
+                for (int j = 0; j < btime[i] / 2; j++)
+                {
+                    g[i].Text += " ";
+                }
+                
+            }
+            g[totalid].Show();
+            g[totalid].Text = " " + tatime[totalid - 1];
+            /*for (int i = 0; i < totalid; i++)
+            {
+                g[i].Show();
                 g[i].Text = "p" + p[i];
                 for (int j = 0; j < btime[i]; j++)
                 {
                     g[i].Text += "  ";
                 }
                 g[i].Text += wtime[i];
-            }
+            } */
 
         }
         public void shortestjob()
@@ -271,9 +360,10 @@ namespace OSproject
                 {
                     g[i].Text += " ";
                 }
-                g[totalid].Show();
-                g[totalid].Text = " "+ tatime[totalid - 1];
+               
               }
+            g[totalid].Show();
+            g[totalid].Text = " " + tatime[totalid - 1];
 
 
         }
@@ -304,6 +394,23 @@ namespace OSproject
             for (int i = 0; i < totalid; i++)
             {
                 g[i].Show();
+                g[i].Text = wtime[i] + "";
+                for (int j = 0; j < btime[i] / 2; j++)
+                {
+                    g[i].Text += " ";
+                }
+                g[i].Text += " p " + p[i];
+                for (int j = 0; j < btime[i] / 2; j++)
+                {
+                    g[i].Text += " ";
+                }
+               
+            }
+            g[totalid].Show();
+            g[totalid].Text = " " + tatime[totalid - 1];
+            /*for (int i = 0; i < totalid; i++)
+            {
+                g[i].Show();
                 g[i].Text = "p" + p[i];
                 for (int j = 0; j < btime[i]; j++)
                 {
@@ -311,8 +418,8 @@ namespace OSproject
                     
                 }
                 g[i].Text +=wtime[i];
-            }
-        }
+            } */
+        } 
         private void button1_Click(object sender, EventArgs e)
         {
              btime = new int[10];
@@ -323,22 +430,27 @@ namespace OSproject
                 btime[i] = Convert.ToInt32(bt[i].Text);
                 p[i] = Convert.ToInt32(pid[i].Text);
             }
-            if (label1.Text == "Priority" ||label1.Text == "Round Robin")
+            if (label1.Text == "Priority")
             {
                 for (int i = 0; i < totalid; i++)
                 {
                     po[i] = Convert.ToInt32(PRI[i].Text);
                 }
-                if (label1.Text == "Round Robin")
-                    time_quantum = Convert.ToInt32(timeslice.Text);
+             }
+            if(label1.Text== "Round Robin")
+            {
+                time_quantum = Convert.ToInt32(timeslice.Text);
             }
+
                 label5.Text = "NIL";
             if (label1.Text == "First come first served")
                 firstcomfirstser();
             else if (label1.Text == "Shortest job first")
                 shortestjob();
-            else if (label1.Text == "Priority" || label1.Text == "Round Robin")
+            else if (label1.Text == "Priority")
                 Priorityscheduling();
+            else if (label1.Text == "Round Robin")
+                RoundRobin();
 
 
            }
