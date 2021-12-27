@@ -418,7 +418,10 @@ namespace OSproject
                 {
                     g[i].Text += " ";
                 }
-               
+                g[totalid].Show();
+                g[totalid].Text = " " + tatime[totalid - 1];
+
+
             }
             g[totalid].Show();
             g[totalid].Text = " " + tatime[totalid - 1];
