@@ -165,10 +165,16 @@ namespace OSproject
             Prioritysch.Hide();
             aboutinfo1.Hide();
             SRT.Show();
-            SRT.prioritylabel.Text = " Arrival Time";
+            SRT.prioritylabel.Text = "Arrival Time";
             SRT.Show();
+            SRT.label4.Text = "Process burst arrival waiting turnaround completion";
             SRT.label1.Text = "Shortest Remaining Time First";
             SRT.prioritylabel.Show();
+        }
+
+        private void SRT_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

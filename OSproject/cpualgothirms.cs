@@ -108,7 +108,7 @@ namespace OSproject
                 pid[i].Show();
                 bt[i].Show();
             }
-            if (label1.Text == "Priority")
+            if (label1.Text == "Priority" || label1.Text == "Shortest Remaining Time First")
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -132,7 +132,7 @@ namespace OSproject
             totalid = Convert.ToInt32(total.Text);
             label2.Show();
             button1.Show();
-            if (label1.Text == "Priority")
+            if (label1.Text == "Priority"|| label1.Text == "Shortest Remaining Time First")
             {
                 PRI = new TextBox[10];
                 PRI[0] = pri0;
@@ -171,7 +171,44 @@ namespace OSproject
 
         private void label4_Click(object sender, EventArgs e)
         {
+            
+        }
+        public void shortestremaining()
+        {
+            wtime = new int[10];
+            tatime = new int[10];
+            int[] completion = new int[10];
+            int[] x = new int[10];
+            int smallest, count = 0, time, endvalue=0;
+            for (int i = 0; i < totalid; i++)
+            {
+                x[i] = btime[i];
+            }
+            btime[9] = 9999;
+            for (time = 0; count != totalid; time++)
+            {
+                smallest = 9;
+                for (int i = 0; i < totalid; i++)
+                {
+                    if (po[i] <= time && btime[i] < btime[smallest] && btime[i] > 0)
+                        smallest = i;
+                }
+                btime[smallest]--;
 
+                if (btime[smallest] == 0)
+                {
+                    count++;
+                    endvalue = time + 1;
+                    completion[smallest] = endvalue;
+                    wtime[smallest] = endvalue - po[smallest] - x[smallest];
+                    tatime[smallest] = endvalue - po[smallest];
+                }
+            }
+            label5.Text = "";
+            for (int i = 0; i < totalid; i++)
+            {
+                label5.Text += "pid  " + p[i] + "    " + x[i]+"      " + po[i]+"      " + wtime[i] + "       " + tatime[i] + "            "  + completion[i]+"\n";
+            }
         }
         public void RoundRobin()
         {
@@ -473,7 +510,7 @@ namespace OSproject
                 btime[i] = Convert.ToInt32(bt[i].Text);
                 p[i] = Convert.ToInt32(pid[i].Text);
             }
-            if (label1.Text == "Priority")
+            if (label1.Text == "Priority"|| label1.Text == "Shortest Remaining Time First")
             {
                 for (int i = 0; i < totalid; i++)
                 {
@@ -494,6 +531,8 @@ namespace OSproject
                 Priorityscheduling();
             else if (label1.Text == "Round Robin")
                 RoundRobin();
+            else if (label1.Text == "Shortest Remaining Time First")
+                shortestremaining();
 
 
            }

@@ -38,6 +38,7 @@ namespace OSproject
             this.About = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.SRT = new OSproject.cpualgothirms();
             this.RR = new OSproject.cpualgothirms();
             this.Prioritysch = new OSproject.cpualgothirms();
             this.sjf = new OSproject.cpualgothirms();
@@ -45,7 +46,6 @@ namespace OSproject
             this.aboutinfo2 = new OSproject.Aboutinfo();
             this.aboutinfo1 = new OSproject.Aboutinfo();
             this.developers1 = new OSproject.Developers();
-            this.SRT = new OSproject.cpualgothirms();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@ namespace OSproject
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(183, 662);
             this.panel1.TabIndex = 0;
@@ -75,7 +75,7 @@ namespace OSproject
             this.SRTbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SRTbtn.ForeColor = System.Drawing.Color.White;
             this.SRTbtn.Location = new System.Drawing.Point(9, 412);
-            this.SRTbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SRTbtn.Margin = new System.Windows.Forms.Padding(4);
             this.SRTbtn.Name = "SRTbtn";
             this.SRTbtn.Size = new System.Drawing.Size(157, 34);
             this.SRTbtn.TabIndex = 7;
@@ -90,7 +90,7 @@ namespace OSproject
             this.RRBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RRBTN.ForeColor = System.Drawing.Color.White;
             this.RRBTN.Location = new System.Drawing.Point(9, 370);
-            this.RRBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RRBTN.Margin = new System.Windows.Forms.Padding(4);
             this.RRBTN.Name = "RRBTN";
             this.RRBTN.Size = new System.Drawing.Size(157, 34);
             this.RRBTN.TabIndex = 6;
@@ -105,7 +105,7 @@ namespace OSproject
             this.Priority.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Priority.ForeColor = System.Drawing.Color.White;
             this.Priority.Location = new System.Drawing.Point(9, 327);
-            this.Priority.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Priority.Margin = new System.Windows.Forms.Padding(4);
             this.Priority.Name = "Priority";
             this.Priority.Size = new System.Drawing.Size(157, 34);
             this.Priority.TabIndex = 5;
@@ -120,7 +120,7 @@ namespace OSproject
             this.shortest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shortest.ForeColor = System.Drawing.Color.White;
             this.shortest.Location = new System.Drawing.Point(9, 286);
-            this.shortest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.shortest.Margin = new System.Windows.Forms.Padding(4);
             this.shortest.Name = "shortest";
             this.shortest.Size = new System.Drawing.Size(157, 34);
             this.shortest.TabIndex = 4;
@@ -135,7 +135,7 @@ namespace OSproject
             this.firstcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.firstcome.ForeColor = System.Drawing.Color.White;
             this.firstcome.Location = new System.Drawing.Point(9, 244);
-            this.firstcome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.firstcome.Margin = new System.Windows.Forms.Padding(4);
             this.firstcome.Name = "firstcome";
             this.firstcome.Size = new System.Drawing.Size(157, 34);
             this.firstcome.TabIndex = 3;
@@ -150,7 +150,7 @@ namespace OSproject
             this.About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.About.ForeColor = System.Drawing.Color.White;
             this.About.Location = new System.Drawing.Point(9, 202);
-            this.About.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.About.Margin = new System.Windows.Forms.Padding(4);
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(157, 34);
             this.About.TabIndex = 2;
@@ -177,13 +177,22 @@ namespace OSproject
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(9, 160);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "Developers";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // SRT
+            // 
+            this.SRT.Location = new System.Drawing.Point(199, 22);
+            this.SRT.Name = "SRT";
+            this.SRT.Size = new System.Drawing.Size(878, 522);
+            this.SRT.TabIndex = 8;
+            this.SRT.Visible = false;
+            this.SRT.Load += new System.EventHandler(this.SRT_Load);
             // 
             // RR
             // 
@@ -230,7 +239,7 @@ namespace OSproject
             // 
             this.aboutinfo2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.aboutinfo2.Location = new System.Drawing.Point(199, 22);
-            this.aboutinfo2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.aboutinfo2.Margin = new System.Windows.Forms.Padding(5);
             this.aboutinfo2.Name = "aboutinfo2";
             this.aboutinfo2.Size = new System.Drawing.Size(871, 587);
             this.aboutinfo2.TabIndex = 3;
@@ -240,7 +249,7 @@ namespace OSproject
             // 
             this.aboutinfo1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.aboutinfo1.Location = new System.Drawing.Point(191, 14);
-            this.aboutinfo1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.aboutinfo1.Margin = new System.Windows.Forms.Padding(5);
             this.aboutinfo1.Name = "aboutinfo1";
             this.aboutinfo1.Size = new System.Drawing.Size(892, 649);
             this.aboutinfo1.TabIndex = 2;
@@ -250,19 +259,12 @@ namespace OSproject
             // developers1
             // 
             this.developers1.Location = new System.Drawing.Point(191, 14);
-            this.developers1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.developers1.Margin = new System.Windows.Forms.Padding(5);
             this.developers1.Name = "developers1";
             this.developers1.Size = new System.Drawing.Size(888, 649);
             this.developers1.TabIndex = 1;
             this.developers1.Visible = false;
             this.developers1.Load += new System.EventHandler(this.developers1_Load_1);
-            // 
-            // SRT
-            // 
-            this.SRT.Location = new System.Drawing.Point(199, 22);
-            this.SRT.Name = "SRT";
-            this.SRT.Size = new System.Drawing.Size(878, 522);
-            this.SRT.TabIndex = 8;
             // 
             // Dashboard
             // 
@@ -278,7 +280,7 @@ namespace OSproject
             this.Controls.Add(this.aboutinfo1);
             this.Controls.Add(this.developers1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
