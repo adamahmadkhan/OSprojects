@@ -74,6 +74,14 @@ namespace OSproject
             this.g12 = new System.Windows.Forms.Label();
             this.g13 = new System.Windows.Forms.Label();
             this.g14 = new System.Windows.Forms.Label();
+            this.g15 = new System.Windows.Forms.Label();
+            this.g16 = new System.Windows.Forms.Label();
+            this.g17 = new System.Windows.Forms.Label();
+            this.g18 = new System.Windows.Forms.Label();
+            this.g19 = new System.Windows.Forms.Label();
+            this.g20 = new System.Windows.Forms.Label();
+            this.g21 = new System.Windows.Forms.Label();
+            this.g22 = new System.Windows.Forms.Label();
             this.pri6 = new System.Windows.Forms.TextBox();
             this.pri7 = new System.Windows.Forms.TextBox();
             this.pri8 = new System.Windows.Forms.TextBox();
@@ -87,14 +95,6 @@ namespace OSproject
             this.prioritylabel = new System.Windows.Forms.Label();
             this.timeslice = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.g15 = new System.Windows.Forms.Label();
-            this.g16 = new System.Windows.Forms.Label();
-            this.g17 = new System.Windows.Forms.Label();
-            this.g18 = new System.Windows.Forms.Label();
-            this.g19 = new System.Windows.Forms.Label();
-            this.g20 = new System.Windows.Forms.Label();
-            this.g21 = new System.Windows.Forms.Label();
-            this.g22 = new System.Windows.Forms.Label();
             this.Gantt.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -327,7 +327,7 @@ namespace OSproject
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(505, 81);
+            this.label4.Location = new System.Drawing.Point(521, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(214, 17);
             this.label4.TabIndex = 26;
@@ -356,7 +356,7 @@ namespace OSproject
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(504, 107);
+            this.label5.Location = new System.Drawing.Point(520, 87);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 19);
             this.label5.TabIndex = 28;
@@ -366,7 +366,7 @@ namespace OSproject
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(504, 394);
+            this.label6.Location = new System.Drawing.Point(520, 402);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 17);
             this.label6.TabIndex = 29;
@@ -410,7 +410,7 @@ namespace OSproject
             // g0
             // 
             this.g0.AutoSize = true;
-            this.g0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.g0.BackColor = System.Drawing.Color.Orange;
             this.g0.Location = new System.Drawing.Point(3, 0);
             this.g0.Name = "g0";
             this.g0.Size = new System.Drawing.Size(54, 17);
@@ -567,7 +567,7 @@ namespace OSproject
             // g14
             // 
             this.g14.AutoSize = true;
-            this.g14.BackColor = System.Drawing.Color.Red;
+            this.g14.BackColor = System.Drawing.Color.Aqua;
             this.g14.Location = new System.Drawing.Point(819, 0);
             this.g14.Name = "g14";
             this.g14.Size = new System.Drawing.Size(54, 17);
@@ -575,6 +575,94 @@ namespace OSproject
             this.g14.Text = "label20";
             this.g14.Visible = false;
             this.g14.Click += new System.EventHandler(this.g14_Click);
+            // 
+            // g15
+            // 
+            this.g15.AutoSize = true;
+            this.g15.BackColor = System.Drawing.Color.Purple;
+            this.g15.Location = new System.Drawing.Point(3, 17);
+            this.g15.Name = "g15";
+            this.g15.Size = new System.Drawing.Size(54, 17);
+            this.g15.TabIndex = 15;
+            this.g15.Text = "label17";
+            this.g15.Visible = false;
+            // 
+            // g16
+            // 
+            this.g16.AutoSize = true;
+            this.g16.BackColor = System.Drawing.Color.DeepPink;
+            this.g16.Location = new System.Drawing.Point(63, 17);
+            this.g16.Name = "g16";
+            this.g16.Size = new System.Drawing.Size(54, 17);
+            this.g16.TabIndex = 16;
+            this.g16.Text = "label18";
+            this.g16.Visible = false;
+            // 
+            // g17
+            // 
+            this.g17.AutoSize = true;
+            this.g17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.g17.Location = new System.Drawing.Point(123, 17);
+            this.g17.Name = "g17";
+            this.g17.Size = new System.Drawing.Size(54, 17);
+            this.g17.TabIndex = 17;
+            this.g17.Text = "label19";
+            this.g17.Visible = false;
+            // 
+            // g18
+            // 
+            this.g18.AutoSize = true;
+            this.g18.BackColor = System.Drawing.Color.Red;
+            this.g18.Location = new System.Drawing.Point(183, 17);
+            this.g18.Name = "g18";
+            this.g18.Size = new System.Drawing.Size(54, 17);
+            this.g18.TabIndex = 18;
+            this.g18.Text = "label20";
+            this.g18.Visible = false;
+            // 
+            // g19
+            // 
+            this.g19.AutoSize = true;
+            this.g19.BackColor = System.Drawing.Color.Fuchsia;
+            this.g19.Location = new System.Drawing.Point(243, 17);
+            this.g19.Name = "g19";
+            this.g19.Size = new System.Drawing.Size(54, 17);
+            this.g19.TabIndex = 19;
+            this.g19.Text = "label17";
+            this.g19.Visible = false;
+            // 
+            // g20
+            // 
+            this.g20.AutoSize = true;
+            this.g20.BackColor = System.Drawing.Color.Lime;
+            this.g20.Location = new System.Drawing.Point(303, 17);
+            this.g20.Name = "g20";
+            this.g20.Size = new System.Drawing.Size(54, 17);
+            this.g20.TabIndex = 20;
+            this.g20.Text = "label18";
+            this.g20.Visible = false;
+            // 
+            // g21
+            // 
+            this.g21.AutoSize = true;
+            this.g21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.g21.Location = new System.Drawing.Point(363, 17);
+            this.g21.Name = "g21";
+            this.g21.Size = new System.Drawing.Size(54, 17);
+            this.g21.TabIndex = 21;
+            this.g21.Text = "label19";
+            this.g21.Visible = false;
+            // 
+            // g22
+            // 
+            this.g22.AutoSize = true;
+            this.g22.BackColor = System.Drawing.Color.Red;
+            this.g22.Location = new System.Drawing.Point(423, 17);
+            this.g22.Name = "g22";
+            this.g22.Size = new System.Drawing.Size(54, 17);
+            this.g22.TabIndex = 22;
+            this.g22.Text = "label20";
+            this.g22.Visible = false;
             // 
             // pri6
             // 
@@ -699,94 +787,6 @@ namespace OSproject
             this.label7.Text = "Time Slice";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label7.Visible = false;
-            // 
-            // g15
-            // 
-            this.g15.AutoSize = true;
-            this.g15.BackColor = System.Drawing.Color.Fuchsia;
-            this.g15.Location = new System.Drawing.Point(3, 17);
-            this.g15.Name = "g15";
-            this.g15.Size = new System.Drawing.Size(54, 17);
-            this.g15.TabIndex = 15;
-            this.g15.Text = "label17";
-            this.g15.Visible = false;
-            // 
-            // g16
-            // 
-            this.g16.AutoSize = true;
-            this.g16.BackColor = System.Drawing.Color.Lime;
-            this.g16.Location = new System.Drawing.Point(63, 17);
-            this.g16.Name = "g16";
-            this.g16.Size = new System.Drawing.Size(54, 17);
-            this.g16.TabIndex = 16;
-            this.g16.Text = "label18";
-            this.g16.Visible = false;
-            // 
-            // g17
-            // 
-            this.g17.AutoSize = true;
-            this.g17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.g17.Location = new System.Drawing.Point(123, 17);
-            this.g17.Name = "g17";
-            this.g17.Size = new System.Drawing.Size(54, 17);
-            this.g17.TabIndex = 17;
-            this.g17.Text = "label19";
-            this.g17.Visible = false;
-            // 
-            // g18
-            // 
-            this.g18.AutoSize = true;
-            this.g18.BackColor = System.Drawing.Color.Red;
-            this.g18.Location = new System.Drawing.Point(183, 17);
-            this.g18.Name = "g18";
-            this.g18.Size = new System.Drawing.Size(54, 17);
-            this.g18.TabIndex = 18;
-            this.g18.Text = "label20";
-            this.g18.Visible = false;
-            // 
-            // g19
-            // 
-            this.g19.AutoSize = true;
-            this.g19.BackColor = System.Drawing.Color.Fuchsia;
-            this.g19.Location = new System.Drawing.Point(243, 17);
-            this.g19.Name = "g19";
-            this.g19.Size = new System.Drawing.Size(54, 17);
-            this.g19.TabIndex = 19;
-            this.g19.Text = "label17";
-            this.g19.Visible = false;
-            // 
-            // g20
-            // 
-            this.g20.AutoSize = true;
-            this.g20.BackColor = System.Drawing.Color.Lime;
-            this.g20.Location = new System.Drawing.Point(303, 17);
-            this.g20.Name = "g20";
-            this.g20.Size = new System.Drawing.Size(54, 17);
-            this.g20.TabIndex = 20;
-            this.g20.Text = "label18";
-            this.g20.Visible = false;
-            // 
-            // g21
-            // 
-            this.g21.AutoSize = true;
-            this.g21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.g21.Location = new System.Drawing.Point(363, 17);
-            this.g21.Name = "g21";
-            this.g21.Size = new System.Drawing.Size(54, 17);
-            this.g21.TabIndex = 21;
-            this.g21.Text = "label19";
-            this.g21.Visible = false;
-            // 
-            // g22
-            // 
-            this.g22.AutoSize = true;
-            this.g22.BackColor = System.Drawing.Color.Red;
-            this.g22.Location = new System.Drawing.Point(423, 17);
-            this.g22.Name = "g22";
-            this.g22.Size = new System.Drawing.Size(54, 17);
-            this.g22.TabIndex = 22;
-            this.g22.Text = "label20";
-            this.g22.Visible = false;
             // 
             // cpualgothirms
             // 

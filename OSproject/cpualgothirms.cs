@@ -228,6 +228,7 @@ namespace OSproject
   
             for (int i = 1; i < k; i++)
             {
+                colors(pidp, i);
                 g[i].Show();
                 g[i].Text = wtp[i] + "";
                 for (int j = 0; j < btp[i]/ 2; j++)
@@ -243,6 +244,31 @@ namespace OSproject
             }
 
 
+        }
+        public void colors(int [] pidp,int i)
+        {
+            if (pidp[i] == 0)
+                this.g[i].BackColor = System.Drawing.Color.Purple;
+            if (pidp[i] == 1)
+                this.g[i].BackColor = System.Drawing.Color.Pink;
+            if (pidp[i] == 2)
+                this.g[i].BackColor = System.Drawing.Color.Red;
+            if (pidp[i] == 3)
+                this.g[i].BackColor = System.Drawing.Color.Green;
+            if (pidp[i] == 4)
+                this.g[i].BackColor = System.Drawing.Color.Yellow;
+            if (pidp[i] == 5)
+                this.g[i].BackColor = System.Drawing.Color.Blue;
+            if (pidp[i] == 6)
+                this.g[i].BackColor = System.Drawing.Color.Lime;
+            if (pidp[i] == 7)
+                this.g[i].BackColor = System.Drawing.Color.Fuchsia;
+            if (pidp[i] == 8)
+                this.g[i].BackColor = System.Drawing.Color.Aquamarine;
+            if (pidp[i] == 9)
+                this.g[i].BackColor = System.Drawing.Color.DarkSeaGreen;
+            if (pidp[i] == 10)
+                this.g[i].BackColor = System.Drawing.Color.Azure;
         }
         public void Priorityscheduling()
         {
