@@ -69,6 +69,11 @@ namespace OSproject
             this.g7 = new System.Windows.Forms.Label();
             this.g8 = new System.Windows.Forms.Label();
             this.g9 = new System.Windows.Forms.Label();
+            this.g10 = new System.Windows.Forms.Label();
+            this.g11 = new System.Windows.Forms.Label();
+            this.g12 = new System.Windows.Forms.Label();
+            this.g13 = new System.Windows.Forms.Label();
+            this.g14 = new System.Windows.Forms.Label();
             this.pri6 = new System.Windows.Forms.TextBox();
             this.pri7 = new System.Windows.Forms.TextBox();
             this.pri8 = new System.Windows.Forms.TextBox();
@@ -82,6 +87,14 @@ namespace OSproject
             this.prioritylabel = new System.Windows.Forms.Label();
             this.timeslice = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.g15 = new System.Windows.Forms.Label();
+            this.g16 = new System.Windows.Forms.Label();
+            this.g17 = new System.Windows.Forms.Label();
+            this.g18 = new System.Windows.Forms.Label();
+            this.g19 = new System.Windows.Forms.Label();
+            this.g20 = new System.Windows.Forms.Label();
+            this.g21 = new System.Windows.Forms.Label();
+            this.g22 = new System.Windows.Forms.Label();
             this.Gantt.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -353,7 +366,7 @@ namespace OSproject
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(480, 308);
+            this.label6.Location = new System.Drawing.Point(504, 394);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 17);
             this.label6.TabIndex = 29;
@@ -375,6 +388,19 @@ namespace OSproject
             this.Gantt.Controls.Add(this.g7);
             this.Gantt.Controls.Add(this.g8);
             this.Gantt.Controls.Add(this.g9);
+            this.Gantt.Controls.Add(this.g10);
+            this.Gantt.Controls.Add(this.g11);
+            this.Gantt.Controls.Add(this.g12);
+            this.Gantt.Controls.Add(this.g13);
+            this.Gantt.Controls.Add(this.g14);
+            this.Gantt.Controls.Add(this.g15);
+            this.Gantt.Controls.Add(this.g16);
+            this.Gantt.Controls.Add(this.g17);
+            this.Gantt.Controls.Add(this.g18);
+            this.Gantt.Controls.Add(this.g19);
+            this.Gantt.Controls.Add(this.g20);
+            this.Gantt.Controls.Add(this.g21);
+            this.Gantt.Controls.Add(this.g22);
             this.Gantt.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Gantt.Location = new System.Drawing.Point(0, 433);
             this.Gantt.Name = "Gantt";
@@ -492,6 +518,63 @@ namespace OSproject
             this.g9.TabIndex = 8;
             this.g9.Text = "label15";
             this.g9.Visible = false;
+            // 
+            // g10
+            // 
+            this.g10.AutoSize = true;
+            this.g10.BackColor = System.Drawing.Color.Yellow;
+            this.g10.Location = new System.Drawing.Point(579, 0);
+            this.g10.Name = "g10";
+            this.g10.Size = new System.Drawing.Size(54, 17);
+            this.g10.TabIndex = 10;
+            this.g10.Text = "label16";
+            this.g10.Visible = false;
+            this.g10.Click += new System.EventHandler(this.g10_Click);
+            // 
+            // g11
+            // 
+            this.g11.AutoSize = true;
+            this.g11.BackColor = System.Drawing.Color.Fuchsia;
+            this.g11.Location = new System.Drawing.Point(639, 0);
+            this.g11.Name = "g11";
+            this.g11.Size = new System.Drawing.Size(54, 17);
+            this.g11.TabIndex = 11;
+            this.g11.Text = "label17";
+            this.g11.Visible = false;
+            // 
+            // g12
+            // 
+            this.g12.AutoSize = true;
+            this.g12.BackColor = System.Drawing.Color.Lime;
+            this.g12.Location = new System.Drawing.Point(699, 0);
+            this.g12.Name = "g12";
+            this.g12.Size = new System.Drawing.Size(54, 17);
+            this.g12.TabIndex = 12;
+            this.g12.Text = "label18";
+            this.g12.Visible = false;
+            // 
+            // g13
+            // 
+            this.g13.AutoSize = true;
+            this.g13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.g13.Location = new System.Drawing.Point(759, 0);
+            this.g13.Name = "g13";
+            this.g13.Size = new System.Drawing.Size(54, 17);
+            this.g13.TabIndex = 13;
+            this.g13.Text = "label19";
+            this.g13.Visible = false;
+            // 
+            // g14
+            // 
+            this.g14.AutoSize = true;
+            this.g14.BackColor = System.Drawing.Color.Red;
+            this.g14.Location = new System.Drawing.Point(819, 0);
+            this.g14.Name = "g14";
+            this.g14.Size = new System.Drawing.Size(54, 17);
+            this.g14.TabIndex = 14;
+            this.g14.Text = "label20";
+            this.g14.Visible = false;
+            this.g14.Click += new System.EventHandler(this.g14_Click);
             // 
             // pri6
             // 
@@ -617,6 +700,94 @@ namespace OSproject
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label7.Visible = false;
             // 
+            // g15
+            // 
+            this.g15.AutoSize = true;
+            this.g15.BackColor = System.Drawing.Color.Fuchsia;
+            this.g15.Location = new System.Drawing.Point(3, 17);
+            this.g15.Name = "g15";
+            this.g15.Size = new System.Drawing.Size(54, 17);
+            this.g15.TabIndex = 15;
+            this.g15.Text = "label17";
+            this.g15.Visible = false;
+            // 
+            // g16
+            // 
+            this.g16.AutoSize = true;
+            this.g16.BackColor = System.Drawing.Color.Lime;
+            this.g16.Location = new System.Drawing.Point(63, 17);
+            this.g16.Name = "g16";
+            this.g16.Size = new System.Drawing.Size(54, 17);
+            this.g16.TabIndex = 16;
+            this.g16.Text = "label18";
+            this.g16.Visible = false;
+            // 
+            // g17
+            // 
+            this.g17.AutoSize = true;
+            this.g17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.g17.Location = new System.Drawing.Point(123, 17);
+            this.g17.Name = "g17";
+            this.g17.Size = new System.Drawing.Size(54, 17);
+            this.g17.TabIndex = 17;
+            this.g17.Text = "label19";
+            this.g17.Visible = false;
+            // 
+            // g18
+            // 
+            this.g18.AutoSize = true;
+            this.g18.BackColor = System.Drawing.Color.Red;
+            this.g18.Location = new System.Drawing.Point(183, 17);
+            this.g18.Name = "g18";
+            this.g18.Size = new System.Drawing.Size(54, 17);
+            this.g18.TabIndex = 18;
+            this.g18.Text = "label20";
+            this.g18.Visible = false;
+            // 
+            // g19
+            // 
+            this.g19.AutoSize = true;
+            this.g19.BackColor = System.Drawing.Color.Fuchsia;
+            this.g19.Location = new System.Drawing.Point(243, 17);
+            this.g19.Name = "g19";
+            this.g19.Size = new System.Drawing.Size(54, 17);
+            this.g19.TabIndex = 19;
+            this.g19.Text = "label17";
+            this.g19.Visible = false;
+            // 
+            // g20
+            // 
+            this.g20.AutoSize = true;
+            this.g20.BackColor = System.Drawing.Color.Lime;
+            this.g20.Location = new System.Drawing.Point(303, 17);
+            this.g20.Name = "g20";
+            this.g20.Size = new System.Drawing.Size(54, 17);
+            this.g20.TabIndex = 20;
+            this.g20.Text = "label18";
+            this.g20.Visible = false;
+            // 
+            // g21
+            // 
+            this.g21.AutoSize = true;
+            this.g21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.g21.Location = new System.Drawing.Point(363, 17);
+            this.g21.Name = "g21";
+            this.g21.Size = new System.Drawing.Size(54, 17);
+            this.g21.TabIndex = 21;
+            this.g21.Text = "label19";
+            this.g21.Visible = false;
+            // 
+            // g22
+            // 
+            this.g22.AutoSize = true;
+            this.g22.BackColor = System.Drawing.Color.Red;
+            this.g22.Location = new System.Drawing.Point(423, 17);
+            this.g22.Name = "g22";
+            this.g22.Size = new System.Drawing.Size(54, 17);
+            this.g22.TabIndex = 22;
+            this.g22.Text = "label20";
+            this.g22.Visible = false;
+            // 
             // cpualgothirms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -728,5 +899,18 @@ namespace OSproject
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox timeslice;
         public System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label g10;
+        private System.Windows.Forms.Label g11;
+        private System.Windows.Forms.Label g12;
+        private System.Windows.Forms.Label g13;
+        private System.Windows.Forms.Label g14;
+        private System.Windows.Forms.Label g15;
+        private System.Windows.Forms.Label g16;
+        private System.Windows.Forms.Label g17;
+        private System.Windows.Forms.Label g18;
+        private System.Windows.Forms.Label g19;
+        private System.Windows.Forms.Label g20;
+        private System.Windows.Forms.Label g21;
+        private System.Windows.Forms.Label g22;
     }
 }

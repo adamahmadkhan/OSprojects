@@ -21,7 +21,7 @@ namespace OSproject
         int[] tatime;
         int[] p;
         int[] po;
-        Label[] g = new Label[10];
+        Label[] g = new Label[23];
         int avwt;
         int avtat;
         int time_quantum;
@@ -80,14 +80,29 @@ namespace OSproject
             g[7] = g7;
             g[8] = g8;
             g[9] = g9;
-
+            g[10] = g10;
+            g[11] = g11;
+            g[12] = g12;
+            g[13] = g13;
+            g[14] = g14;
+            g[15] = g15;
+            g[16] = g16;
+            g[17] = g17;
+            g[18] = g18;
+            g[19] = g19;
+            g[20] = g20;
+            g[21] = g21;
+            g[22] = g22;
             for (int i = 0; i < 10; i++)
             {
                 pid[i].Hide();
                 bt[i].Hide();
+                
+            }
+            for(int i =0;i<23;i++)
+            {
                 g[i].Hide();
             }
-
             for (int i = 0; i < totalid; i++)
             {
                 pid[i].Show();
@@ -210,18 +225,17 @@ namespace OSproject
             avtat /= totalid;
             label6.Show();
             label6.Text = "average waiting time: " + avwt + "\nAverage turn around time " + avtat;
-            int temp;
+  
             for (int i = 1; i < k; i++)
             {
-                temp = btime[i-1] / time_quantum;
                 g[i].Show();
                 g[i].Text = wtp[i] + "";
-                for (int j = 0; j < temp / 2; j++)
+                for (int j = 0; j < btp[i]/ 2; j++)
                 {
                     g[i].Text += " ";
                 }
-                g[i].Text += " p " + pidp[i];
-                for (int j = 0; j < temp / 2; j++)
+                g[i].Text += " p" + pidp[i];
+                for (int j = 0; j < btp[i] / 2; j++)
                 {
                     g[i].Text += " ";
                 }
@@ -283,7 +297,7 @@ namespace OSproject
                 {
                     g[i].Text += " ";
                 }
-                g[i].Text += " p " + p[i];
+                g[i].Text += " p" + p[i];
                 for (int j = 0; j < btime[i] / 2; j++)
                 {
                     g[i].Text += " ";
@@ -355,7 +369,7 @@ namespace OSproject
                 {
                     g[i].Text += " ";
                 }
-                    g[i].Text += " p " + p[i];
+                    g[i].Text += " p" + p[i];
                 for (int j = 0; j < btime[i] / 2; j++)
                 {
                     g[i].Text += " ";
@@ -399,7 +413,7 @@ namespace OSproject
                 {
                     g[i].Text += " ";
                 }
-                g[i].Text += " p " + p[i];
+                g[i].Text += " p" + p[i];
                 for (int j = 0; j < btime[i] / 2; j++)
                 {
                     g[i].Text += " ";
@@ -562,6 +576,16 @@ namespace OSproject
         }
 
         private void timeslice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void g10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void g14_Click(object sender, EventArgs e)
         {
 
         }
