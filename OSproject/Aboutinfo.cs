@@ -75,8 +75,8 @@ namespace OSproject
             pg[page].Hide();
             page = page - 1;
             page = page % 4;
-            if (page == 0)
-                last.Hide();
+            /*if (page == 0)
+                last.Hide(); */
             label2.Text = "page" + page;
             pg[page].Show();
 

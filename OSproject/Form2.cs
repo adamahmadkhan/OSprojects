@@ -34,6 +34,7 @@ namespace OSproject
             developers1.Hide();
             sjf.Hide();
             Prioritysch.Hide();
+            SRT.Hide();
             aboutinfo1.Hide();
         }
 
@@ -49,6 +50,7 @@ namespace OSproject
             sjf.Hide();
             RR.Hide();
             Prioritysch.Hide();
+            SRT.Hide();
             aboutinfo1.Show();
         }
 
@@ -63,6 +65,7 @@ namespace OSproject
             aboutinfo1.Hide();
             Prioritysch.Hide();
             RR.Hide();
+            SRT.Hide();
             developers1.Show();
         }
 
@@ -84,6 +87,7 @@ namespace OSproject
             sjf.Hide();
             RR.Hide();
             Prioritysch.Hide();
+            SRT.Hide();
             fcfs.label1.Text = "First come first served";
             fcfs.Show();
 
@@ -97,6 +101,7 @@ namespace OSproject
             fcfs.Hide();
             RR.Hide();
             Prioritysch.Hide();
+            SRT.Hide();
             sjf.label1.Text = "Shortest job first";
             sjf.Show();
             
@@ -119,6 +124,7 @@ namespace OSproject
             fcfs.Hide();
             sjf.Hide();
             RR.Hide();
+            SRT.Hide();
             Prioritysch.label1.Text = "Priority";
             Prioritysch.prioritylabel.Show();
             Prioritysch.label4.Text ="Process Burst Waiting TurnAround Prority";
@@ -142,11 +148,25 @@ namespace OSproject
             fcfs.Hide();
             sjf.Hide();
             Prioritysch.Hide();
+            SRT.Hide();
             RR.label1.Text = "Round Robin";
             RR.label7.Show();
             RR.timeslice.Show();
             RR.label4.Text = "Process Waiting TurnAround";
             RR.Show();
+        }
+
+        private void SRTbtn_Click(object sender, EventArgs e)
+        {
+            fcfs.Hide();
+            RR.Hide();
+            developers1.Hide();
+            sjf.Hide();
+            Prioritysch.Hide();
+            aboutinfo1.Hide();
+            SRT.Show();
+            SRT.label1.Text = "Shortest Remaining Time First";
+            SRT.prioritylabel.Show();
         }
     }
 }
