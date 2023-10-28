@@ -12,10 +12,7 @@ Introduction Screen <br>
 <br>
 
 ![Screenshot (129)](https://github.com/adamahmadkhan/OSprojects/assets/74861984/04a19e9d-26c7-4a6a-844d-f7dccebbfb3f)
+<br>
+![Screenshot (130)](https://github.com/adamahmadkhan/OSprojects/assets/74861984/3740822e-5cef-44b3-8e5c-d0842705a4da)
 
 <br>
-![Screenshot (130)](https://github.com/adamahmadkhan/OSprojects/assets/74861984/e075e89a-dec6-4468-9392-fe2132ae9bcf)
-
-<br>
-<br> Code picture <br>
-![Screenshot (136)](https://github.com/adamahmadkhan/OSprojects/assets/74861984/991a7b92-0f2a-40b4-8c33-42590b9325f1)
